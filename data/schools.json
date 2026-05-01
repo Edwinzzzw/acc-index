@@ -538,6 +538,103 @@
       "last_verified": "2026-05-01",
       "tier": "T2",
       "tier_label": "人上人"
+    },
+    {
+      "id": "oxford",
+      "name_en": "University of Oxford",
+      "name_zh": "牛津大学",
+      "aliases": [
+        "Oxford",
+        "Oxon",
+        "牛津",
+        "牛大"
+      ],
+      "country": "GB",
+      "qs_rank_2026": 4,
+      "program_length_months": 12,
+      "term_system": "3-term",
+      "academic_year_start": "2025-10-12",
+      "coursework_end_avg": "2026-03-14",
+      "acc_weeks": 21,
+      "tier": "T1",
+      "tier_label": "顶级",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://www.ox.ac.uk/about/facts-and-figures/dates-of-term",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "3-term 制（Michaelmas / Hilary / Trinity，每 term 8 周 Full Term）。MSc 主流模式：Michaelmas + Hilary 两学期授课，Trinity Term 主要用于 dissertation 与考试。结课日按 Hilary Full Term 末计，与 Imperial 口径一致。",
+      "last_verified": "2026-05-01"
+    },
+    {
+      "id": "cambridge",
+      "name_en": "University of Cambridge",
+      "name_zh": "剑桥大学",
+      "aliases": [
+        "Cambridge",
+        "Cantab",
+        "剑桥",
+        "剑大"
+      ],
+      "country": "GB",
+      "qs_rank_2026": 6,
+      "program_length_months": 9,
+      "term_system": "3-term",
+      "academic_year_start": "2025-10-07",
+      "coursework_end_avg": "2026-05-29",
+      "acc_weeks": 33,
+      "tier": "T2",
+      "tier_label": "人上人",
+      "confidence": "low",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://www.cam.ac.uk/about-the-university/term-dates-and-calendars",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        },
+        {
+          "type": "official",
+          "url": "https://www.jbs.cam.ac.uk/phd-research-masters/mphil-finance/",
+          "field": "program_structure",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "3-term 制（Michaelmas / Lent / Easter，每 term 8 周 Full Term）。授课型项目以 MPhil 为主，多为 9–11 个月制。本数据采用 MPhil Finance / Management 等商科派项目口径，授课延伸至 Easter Term 中段（约 5 月底），dissertation 6 月提交。⚠️ 局限性：理工/社科 MPhil（Engineering / Economics 等）授课普遍持续至 Easter Term 末（约 6 月中），按本库口径将落入 T3；同校项目间差异较大。Phase 4 将按项目级拆分。本条目结课日为基于学制结构的合理估算，无单一官方文档明确写明全校授课结束日，故 confidence = low。",
+      "last_verified": "2026-05-01"
+    },
+    {
+      "id": "warwick",
+      "name_en": "The University of Warwick",
+      "name_zh": "华威大学",
+      "aliases": [
+        "Warwick",
+        "华威"
+      ],
+      "country": "GB",
+      "qs_rank_2026": 74,
+      "program_length_months": 12,
+      "term_system": "3-term",
+      "academic_year_start": "2025-10-06",
+      "coursework_end_avg": "2026-03-21",
+      "acc_weeks": 23,
+      "tier": "T1",
+      "tier_label": "顶级",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://warwick.ac.uk/study/termdates/",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "3-term 制（Autumn / Spring / Summer，每 term 10 周）。授课主要集中在 Autumn + Spring，Summer Term 用于考试与 dissertation（少数学科 Summer Term 仍有授课）。结课日按 Spring Term 末计，与 Imperial / UCL 口径一致。",
+      "last_verified": "2026-05-01"
     }
   ]
 }
