@@ -48,7 +48,8 @@ test.describe('排行榜', () => {
     const rows = page.getByTestId('leaderboard-row');
     await expect(rows.first()).toContainText('港大'); // T0 应排第一
     // 验证至少有 9 个学校
-    await expect(rows).toHaveCount(9);
+    const count = await rows.count();
+    expect(count).toBeGreaterThanOrEqual(9);
   });
 
   test('点排行榜行进入详情页', async ({ page }) => {
