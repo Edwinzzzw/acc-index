@@ -1,17 +1,34 @@
 /**
  * Tier 判定逻辑
  *
- * 评级标准（以 9 月开学为基准）：
- *   T0 夯爆了：次年 1–2 月结课  → acc_weeks ≤ 22
- *   T1 顶级  ：次年 3–4 月结课  → 23 ≤ acc_weeks ≤ 32
- *   T2 人上人：次年 5 月结课    → 33 ≤ acc_weeks ≤ 37
- *   T3 NPC   ：次年 6 月或更晚 → acc_weeks ≥ 38
+ * 评级以 coursework_end_avg 的月份为锚（看"啥时候自由"，不看"总共熬多久"）：
+ *   T0 夯爆了 = 12 月 / 1 月结课（年内基本搞定）
+ *   T1 顶级   = 2–4 月结课（春天回国，赶上春招/暑期实习）
+ *   T2 人上人 = 5 月结课（春天没了，跟美国 master 一档）
+ *   T3 NPC    = 6 月及以后结课（一整个夏天没了）
+ *
+ * 月份阈值而非绝对周数，是因为开学日有 3–4 周差异（HKU 9/1 vs Imperial 9/29），
+ * 只看周数会让"5 月初结课但 9 月底开学"的学校被错划进 T1。
  *
  * 边界值在 tests/unit/tier.test.ts 中钉死，修改时务必同步更新测试。
  */
 
 import type { Tier, TierLabel } from './types';
 
+/**
+ * 月份口径。仅用于 UI legend / 文档展示，computeTier 内部直接判月份。
+ */
+export const TIER_END_MONTH_RULE = {
+  T0: 'Dec / Jan',
+  T1: 'Feb–Apr',
+  T2: 'May',
+  T3: 'Jun onwards',
+} as const;
+
+/**
+ * @deprecated tier 不再由周数划档。此常量仅为兼容历史引用保留，请勿用于新逻辑。
+ * 新规则按 coursework_end_avg 月份判定，见 {@link computeTier}。
+ */
 export const TIER_BOUNDARIES = {
   T0_MAX: 22,
   T1_MAX: 32,
@@ -40,16 +57,19 @@ export const TIER_COLORS: Record<Tier, string> = {
 };
 
 /**
- * 根据周数返回 tier。
- * @param accWeeks 从开学到结课的整周数
+ * 根据 coursework_end_avg (ISO YYYY-MM-DD) 返回 tier。
+ * 仅看月份。
+ *
+ * @param courseworkEndISO 结课日，例如 "2026-05-01"
  */
-export function computeTier(accWeeks: number): Tier {
-  if (!Number.isFinite(accWeeks) || accWeeks < 0) {
-    throw new Error(`Invalid acc_weeks: ${accWeeks}`);
+export function computeTier(courseworkEndISO: string): Tier {
+  if (typeof courseworkEndISO !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(courseworkEndISO)) {
+    throw new Error(`Invalid coursework_end_avg: ${courseworkEndISO}`);
   }
-  if (accWeeks <= TIER_BOUNDARIES.T0_MAX) return 'T0';
-  if (accWeeks <= TIER_BOUNDARIES.T1_MAX) return 'T1';
-  if (accWeeks <= TIER_BOUNDARIES.T2_MAX) return 'T2';
+  const month = parseInt(courseworkEndISO.slice(5, 7), 10);
+  if (month === 12 || month === 1) return 'T0';
+  if (month >= 2 && month <= 4) return 'T1';
+  if (month === 5) return 'T2';
   return 'T3';
 }
 
@@ -59,6 +79,7 @@ export function tierLabel(tier: Tier): TierLabel {
 
 /**
  * 计算两个 ISO 日期 (YYYY-MM-DD) 之间的整周数。
+ * 仅供 acc_weeks 字段使用——tier 计算不再依赖 acc_weeks。
  * 用 floor 而不是 round，避免边界 case 把"差几天"算多。
  */
 export function weeksBetween(startISO: string, endISO: string): number {
