@@ -1,12 +1,15 @@
 {
   "version": "0.1.0-seed",
-  "updated_at": "2026-04-30",
+  "updated_at": "2026-05-01",
   "schools": [
     {
       "id": "hku",
       "name_en": "The University of Hong Kong",
       "name_zh": "香港大学",
-      "aliases": ["HKU", "港大"],
+      "aliases": [
+        "HKU",
+        "港大"
+      ],
       "country": "HK",
       "qs_rank_2026": 11,
       "program_length_months": 12,
@@ -32,7 +35,12 @@
       "id": "imperial",
       "name_en": "Imperial College London",
       "name_zh": "帝国理工学院",
-      "aliases": ["IC", "ICL", "帝国理工", "Imperial"],
+      "aliases": [
+        "IC",
+        "ICL",
+        "帝国理工",
+        "Imperial"
+      ],
       "country": "GB",
       "qs_rank_2026": 2,
       "program_length_months": 12,
@@ -58,7 +66,11 @@
       "id": "ucl",
       "name_en": "University College London",
       "name_zh": "伦敦大学学院",
-      "aliases": ["UCL", "宇宙学院", "University College, London"],
+      "aliases": [
+        "UCL",
+        "宇宙学院",
+        "University College, London"
+      ],
       "country": "GB",
       "qs_rank_2026": 9,
       "program_length_months": 12,
@@ -84,7 +96,11 @@
       "id": "lse",
       "name_en": "London School of Economics and Political Science",
       "name_zh": "伦敦政治经济学院",
-      "aliases": ["LSE", "G5", "伦敦政经"],
+      "aliases": [
+        "LSE",
+        "G5",
+        "伦敦政经"
+      ],
       "country": "GB",
       "qs_rank_2026": 56,
       "program_length_months": 12,
@@ -110,7 +126,10 @@
       "id": "edinburgh",
       "name_en": "University of Edinburgh",
       "name_zh": "爱丁堡大学",
-      "aliases": ["Edin", "爱大"],
+      "aliases": [
+        "Edin",
+        "爱大"
+      ],
       "country": "GB",
       "qs_rank_2026": 34,
       "program_length_months": 12,
@@ -135,7 +154,11 @@
       "id": "columbia",
       "name_en": "Columbia University",
       "name_zh": "哥伦比亚大学",
-      "aliases": ["Columbia", "哥大", "CU"],
+      "aliases": [
+        "Columbia",
+        "哥大",
+        "CU"
+      ],
       "country": "US",
       "qs_rank_2026": 38,
       "program_length_months": 24,
@@ -161,7 +184,10 @@
       "id": "nyu",
       "name_en": "New York University",
       "name_zh": "纽约大学",
-      "aliases": ["NYU", "纽大"],
+      "aliases": [
+        "NYU",
+        "纽大"
+      ],
       "country": "US",
       "qs_rank_2026": 55,
       "program_length_months": 24,
@@ -187,7 +213,11 @@
       "id": "ethz",
       "name_en": "ETH Zurich",
       "name_zh": "苏黎世联邦理工学院",
-      "aliases": ["ETH", "苏黎世联邦理工", "ETHZ"],
+      "aliases": [
+        "ETH",
+        "苏黎世联邦理工",
+        "ETHZ"
+      ],
       "country": "CH",
       "qs_rank_2026": 7,
       "program_length_months": 24,
@@ -213,7 +243,11 @@
       "id": "tu-munich",
       "name_en": "Technical University of Munich",
       "name_zh": "慕尼黑工业大学",
-      "aliases": ["TUM", "TU München", "慕尼黑工大"],
+      "aliases": [
+        "TUM",
+        "TU München",
+        "慕尼黑工大"
+      ],
       "country": "DE",
       "qs_rank_2026": 22,
       "program_length_months": 24,
@@ -234,6 +268,276 @@
       ],
       "notes": "德国学制 Sommersemester 拉到 7 月底。",
       "last_verified": "2026-04-15"
+    },
+    {
+      "id": "manchester",
+      "name_en": "The University of Manchester",
+      "name_zh": "曼彻斯特大学",
+      "aliases": [
+        "UoM",
+        "Manchester",
+        "曼大"
+      ],
+      "country": "GB",
+      "qs_rank_2026": 35,
+      "program_length_months": 12,
+      "term_system": "semester",
+      "academic_year_start": "2025-09-29",
+      "coursework_end_avg": "2026-05-15",
+      "acc_weeks": 32,
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://www.manchester.ac.uk/about/key-dates/",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "Semester 制。Semester 1 教学 9/29–12/12，Semester 2 教学 2/2–5/15。理论课延伸至 5 月中。",
+      "last_verified": "2026-05-01",
+      "tier": "T2",
+      "tier_label": "人上人"
+    },
+    {
+      "id": "kcl",
+      "name_en": "King's College London",
+      "name_zh": "伦敦国王学院",
+      "aliases": [
+        "KCL",
+        "King's",
+        "国王学院"
+      ],
+      "country": "GB",
+      "qs_rank_2026": 31,
+      "program_length_months": 12,
+      "term_system": "semester",
+      "academic_year_start": "2025-09-29",
+      "coursework_end_avg": "2026-05-01",
+      "acc_weeks": 30,
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://self-service.kcl.ac.uk/article/ka-01913/en-us",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "Semester 制。Semester 1 教学 9/29–12/12，Semester 2 教学 1/16–4/2，4/27–5/1 为 teaching/revision week。理论课基本结束于 5 月初。",
+      "last_verified": "2026-05-01",
+      "tier": "T2",
+      "tier_label": "人上人"
+    },
+    {
+      "id": "bristol",
+      "name_en": "University of Bristol",
+      "name_zh": "布里斯托大学",
+      "aliases": [
+        "Bristol",
+        "UoB",
+        "布大"
+      ],
+      "country": "GB",
+      "qs_rank_2026": 51,
+      "program_length_months": 12,
+      "term_system": "semester",
+      "academic_year_start": "2025-09-22",
+      "coursework_end_avg": "2026-05-01",
+      "acc_weeks": 31,
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://www.bristol.ac.uk/students/your-studies/academic-year-dates/",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "Two teaching block 制度。TB1（约 12 周）+ TB2（约 15 周含 consolidation/revision），TB2 末考试期 5/5–5/22。授课型 PGT 暑期用于 dissertation。",
+      "last_verified": "2026-05-01",
+      "tier": "T2",
+      "tier_label": "人上人"
+    },
+    {
+      "id": "birmingham",
+      "name_en": "University of Birmingham",
+      "name_zh": "伯明翰大学",
+      "aliases": [
+        "UoB",
+        "Birmingham",
+        "伯大"
+      ],
+      "country": "GB",
+      "qs_rank_2026": 76,
+      "program_length_months": 12,
+      "term_system": "semester",
+      "academic_year_start": "2025-09-29",
+      "coursework_end_avg": "2026-05-01",
+      "acc_weeks": 30,
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://www.birmingham.ac.uk/undergraduate/courses/academicyear",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "Semester 制。Semester 1 教学 9/29–12/14，Semester 2 教学 1/19–3/29 + 4/27–5/3。理论课结束于 5 月初。",
+      "last_verified": "2026-05-01",
+      "tier": "T2",
+      "tier_label": "人上人"
+    },
+    {
+      "id": "glasgow",
+      "name_en": "University of Glasgow",
+      "name_zh": "格拉斯哥大学",
+      "aliases": [
+        "UoG",
+        "Glasgow",
+        "格大"
+      ],
+      "country": "GB",
+      "qs_rank_2026": 79,
+      "program_length_months": 12,
+      "term_system": "semester",
+      "academic_year_start": "2025-09-22",
+      "coursework_end_avg": "2026-03-27",
+      "acc_weeks": 26,
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://www.gla.ac.uk/myglasgow/apg/sessiondates/session2025-26/",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "Semester 制（苏格兰）。Semester 1 教学 9/22–12/5，Semester 2 教学 1/12–3/27，结课日按 Semester 2 教学结束计。",
+      "last_verified": "2026-05-01",
+      "tier": "T1",
+      "tier_label": "顶级"
+    },
+    {
+      "id": "leeds",
+      "name_en": "University of Leeds",
+      "name_zh": "利兹大学",
+      "aliases": [
+        "Leeds",
+        "UoL",
+        "利大"
+      ],
+      "country": "GB",
+      "qs_rank_2026": 86,
+      "program_length_months": 12,
+      "term_system": "semester",
+      "academic_year_start": "2025-09-29",
+      "coursework_end_avg": "2026-05-08",
+      "acc_weeks": 31,
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://www.leeds.ac.uk/term-dates",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "Semester 制。Autumn 教学 9/29–12/12，Spring 教学 1/26–5/8。",
+      "last_verified": "2026-05-01",
+      "tier": "T2",
+      "tier_label": "人上人"
+    },
+    {
+      "id": "southampton",
+      "name_en": "University of Southampton",
+      "name_zh": "南安普顿大学",
+      "aliases": [
+        "Soton",
+        "Southampton",
+        "南安"
+      ],
+      "country": "GB",
+      "qs_rank_2026": 87,
+      "program_length_months": 12,
+      "term_system": "semester",
+      "academic_year_start": "2025-09-29",
+      "coursework_end_avg": "2026-03-21",
+      "acc_weeks": 24,
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://www.southampton.ac.uk/about/term-dates",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "三学期制实质走 semester。Autumn term 9/29–12/13，Spring term 1/5–3/21。Summer term 主要为考试与 dissertation。",
+      "last_verified": "2026-05-01",
+      "tier": "T1",
+      "tier_label": "顶级"
+    },
+    {
+      "id": "sheffield",
+      "name_en": "The University of Sheffield",
+      "name_zh": "谢菲尔德大学",
+      "aliases": [
+        "Sheffield",
+        "TUOS",
+        "谢大"
+      ],
+      "country": "GB",
+      "qs_rank_2026": 92,
+      "program_length_months": 12,
+      "term_system": "semester",
+      "academic_year_start": "2025-09-29",
+      "coursework_end_avg": "2026-05-15",
+      "acc_weeks": 32,
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://sheffield.ac.uk/about/dates/current-and-future-semester",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "Semester 制。Autumn 教学 9/29–12/20，Spring 教学分两段 2/9–3/28 + 4/20–5/15。理论课延伸至 5 月中。",
+      "last_verified": "2026-05-01",
+      "tier": "T2",
+      "tier_label": "人上人"
+    },
+    {
+      "id": "nottingham",
+      "name_en": "The University of Nottingham",
+      "name_zh": "诺丁汉大学",
+      "aliases": [
+        "UoN",
+        "Nottingham",
+        "诺大"
+      ],
+      "country": "GB",
+      "qs_rank_2026": 97,
+      "program_length_months": 12,
+      "term_system": "semester",
+      "academic_year_start": "2025-09-29",
+      "coursework_end_avg": "2026-05-15",
+      "acc_weeks": 32,
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://www.nottingham.ac.uk/about/keydates/",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "Semester 制（叠加 3-term 用于行政）。Autumn semester 9/22–1/23，Spring semester 1/26–6/19。理论课结束于 5 月中。",
+      "last_verified": "2026-05-01",
+      "tier": "T2",
+      "tier_label": "人上人"
     }
   ]
 }
