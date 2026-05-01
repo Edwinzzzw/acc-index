@@ -21,6 +21,44 @@ interface QsRow {
 
 const CN_MAINLAND = new Set(['CN']); // 香港 HK / 澳门 MO / 台湾 TW 不算大陆
 
+/**
+ * 知名学校的短 id 手工映射表。
+ * slugify 的机械转换会产出 `the-university-of-manchester` 这种又长又啰嗦的 id，
+ * 跟 schools.json 里手工起的短 id（imperial / ucl / lse）风格不一致，所以建一个
+ * 覆盖表，命中就用短 id，没命中就退化到 slugify。
+ *
+ * Key 必须跟 CSV 里 name_en 完全一致（包括括号、缩写后缀），否则不命中。
+ * 添加新学校时往这里加一条即可。
+ */
+const ID_OVERRIDES: Record<string, string> = {
+  // UK — Phase 1 已收录
+  'Imperial College London': 'imperial',
+  'UCL (University College London)': 'ucl',
+  'London School of Economics and Political Science (LSE)': 'lse',
+  'University of Edinburgh': 'edinburgh',
+  // UK — Phase 3 Batch 1
+  'University of Oxford': 'oxford',
+  'University of Cambridge': 'cambridge',
+  "King's College London (KCL)": 'kcl',
+  'The University of Manchester': 'manchester',
+  'University of Bristol': 'bristol',
+  'The University of Warwick': 'warwick',
+  'University of Birmingham': 'birmingham',
+  'University of Glasgow': 'glasgow',
+  'University of Leeds': 'leeds',
+  'University of Southampton': 'southampton',
+  'The University of Sheffield': 'sheffield',
+  'The University of Nottingham': 'nottingham',
+  // HK / Asia — Phase 1 已收录
+  'The University of Hong Kong': 'hku',
+  // US — Phase 1 已收录
+  'Columbia University': 'columbia',
+  'New York University': 'nyu',
+  // Europe — Phase 1 已收录
+  'ETH Zurich (Swiss Federal Institute of Technology)': 'ethz',
+  'Technical University of Munich': 'tu-munich',
+};
+
 function parseCsv(text: string): QsRow[] {
   const lines = text.trim().split(/\r?\n/);
   const [header, ...rows] = lines;
@@ -44,9 +82,13 @@ function slugify(s: string): string {
     .replace(/^-|-$/g, '');
 }
 
+function resolveId(name: string): string {
+  return ID_OVERRIDES[name] ?? slugify(name);
+}
+
 function makeTemplate(row: QsRow) {
   return {
-    id: slugify(row.name_en),
+    id: resolveId(row.name_en),
     name_en: row.name_en,
     name_zh: null, // 待补
     aliases: [],
