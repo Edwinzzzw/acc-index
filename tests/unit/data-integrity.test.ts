@@ -22,9 +22,9 @@ describe('数据完整性', () => {
     }
   });
 
-  it('每条记录的 tier 与 acc_weeks 吻合', () => {
+  it('每条记录的 tier 与 coursework_end_avg 吻合', () => {
     for (const s of db.schools) {
-      const expected = computeTier(s.acc_weeks);
+      const expected = computeTier(s.coursework_end_avg);
       expect(s.tier, `${s.id} tier 应为 ${expected}`).toBe(expected);
     }
   });
