@@ -28,6 +28,9 @@ export function HomePage() {
           研究生平均结课
           <br className="sm:hidden" />
           早晚指数
+          <p className="mt-2 text-base font-medium text-neutral-500 sm:text-lg tracking-wide">
+          Average Coursework Cycle Index
+        </p>
         </h1>
         <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-neutral-600 sm:text-base">
           废除 QS、US News、THE。
