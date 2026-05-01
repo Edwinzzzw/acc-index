@@ -29,7 +29,7 @@ export function HomePage() {
           <br className="sm:hidden" />
           早晚指数
           <p className="mt-2 text-base font-medium text-neutral-500 sm:text-lg tracking-wide">
-          Average Coursework Cycle Index
+          Average Coursework Cycle Index (ACC Index)
         </p>
         </h1>
         <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-neutral-600 sm:text-base">
