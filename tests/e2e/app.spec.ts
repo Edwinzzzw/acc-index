@@ -41,7 +41,8 @@ test.describe('ACC Index · 主流程', () => {
 test.describe('排行榜', () => {
   test('点导航进入排行榜，按 ACC 周数排序', async ({ page }) => {
     await page.goto('/');
-    await page.getByRole('link', { name: '排行榜' }).click();
+    // 限定到顶部导航 nav 内查找，避免命中首页底部的「查看完整排行榜 →」引流链接
+    await page.locator('nav').getByRole('link', { name: '排行榜' }).click();
     await expect(page).toHaveURL(/\/leaderboard$/);
 
     const rows = page.getByTestId('leaderboard-row');
@@ -77,7 +78,7 @@ test.describe('发疯解读', () => {
 test.describe('简介页', () => {
   test('点导航进入简介页', async ({ page }) => {
     await page.goto('/');
-    await page.getByRole('link', { name: '简介' }).click();
+    await page.locator('nav').getByRole('link', { name: '简介' }).click();
     await expect(page).toHaveURL(/\/about$/);
     await expect(page.locator('h1')).toContainText('废除 QS');
     await expect(page.locator('text=研究生平均结课早晚指数')).toBeVisible();
