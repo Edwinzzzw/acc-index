@@ -33,9 +33,23 @@
 5. `npm run validate-data` 本地跑一次确认无误
 6. 提 PR
 
+## Tier 等级定义
+
+Tier 由 `coursework_end_avg`（结课日）的**月份**决定。看月份不看绝对周数，是因为不同学校开学日有 3–4 周差异（HKU 9/1 vs Imperial 9/29），只看周数会让"5 月初结课但 9 月底开学"的学校被错划成 T1。学生关心的是"啥时候自由"，不是"总共熬多久"，所以结课月份才是体感锚点。
+
+| Tier | 标签 | 结课月份 | 体感 |
+| --- | --- | --- | --- |
+| T0 | 夯爆了 | 12 月 / 1 月 | 年内基本搞定，回国跨年 |
+| T1 | 顶级 | 2–4 月 | 春天回国，赶上春招 / 暑期实习 |
+| T2 | 人上人 | 5 月 | 春天没了，跟美国 master 一档 |
+| T3 | NPC | 6 月及以后 | 一整个夏天没了 |
+
+`acc_weeks` 仍然按 `floor((coursework_end_avg − academic_year_start) / 7)` 计算并保留在数据里——它是精确数值参考，但不再用于划 tier。
+
 ## 我想修正一所学校的数据
 
 打开 issue 或直接 PR，**务必附上权威来源 URL**（学校 academic calendar、program handbook 等）。
+
 社区数据（一亩三分地、知乎、Reddit）可以作为辅助，但 `confidence` 字段需要标 `medium` 或 `low`。
 
 ## 数据可信度分级
