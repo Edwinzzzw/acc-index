@@ -1,0 +1,18 @@
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea
+.env
+.env.local
+
+# 测试产物
+test-results
+playwright-report
+playwright/.cache
+
+# Phase 3 中间产物（待补全的模板，不进 main）
+data/schools.pending.json

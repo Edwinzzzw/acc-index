@@ -1,0 +1,239 @@
+{
+  "version": "0.1.0-seed",
+  "updated_at": "2026-04-30",
+  "schools": [
+    {
+      "id": "hku",
+      "name_en": "The University of Hong Kong",
+      "name_zh": "香港大学",
+      "aliases": ["HKU", "港大"],
+      "country": "HK",
+      "qs_rank_2026": 17,
+      "program_length_months": 12,
+      "term_system": "semester",
+      "academic_year_start": "2025-09-01",
+      "coursework_end_avg": "2025-12-19",
+      "acc_weeks": 15,
+      "tier": "T0",
+      "tier_label": "夯爆了",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://www.hku.hk/about/calendar.html",
+          "field": "term_dates",
+          "fetched_at": "2026-04-15"
+        }
+      ],
+      "notes": "部分授课型项目（如 MSc Finance）课程高度集中在 Semester 1，年底前可结课。具体项目间差异较大，将在 Phase 3 拆分到项目级。",
+      "last_verified": "2026-04-15"
+    },
+    {
+      "id": "imperial",
+      "name_en": "Imperial College London",
+      "name_zh": "帝国理工学院",
+      "aliases": ["IC", "ICL", "帝国理工", "Imperial"],
+      "country": "GB",
+      "qs_rank_2026": 2,
+      "program_length_months": 12,
+      "term_system": "3-term",
+      "academic_year_start": "2025-09-29",
+      "coursework_end_avg": "2026-03-20",
+      "acc_weeks": 24,
+      "tier": "T1",
+      "tier_label": "顶级",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://www.imperial.ac.uk/students/academic-calendar/",
+          "field": "term_dates",
+          "fetched_at": "2026-04-15"
+        }
+      ],
+      "notes": "Spring Term 末理论课基本结束，Summer Term 主要用于毕业论文。",
+      "last_verified": "2026-04-15"
+    },
+    {
+      "id": "ucl",
+      "name_en": "University College London",
+      "name_zh": "伦敦大学学院",
+      "aliases": ["UCL", "宇宙学院", "University College, London"],
+      "country": "GB",
+      "qs_rank_2026": 9,
+      "program_length_months": 12,
+      "term_system": "3-term",
+      "academic_year_start": "2025-09-22",
+      "coursework_end_avg": "2026-03-27",
+      "acc_weeks": 26,
+      "tier": "T1",
+      "tier_label": "顶级",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://www.ucl.ac.uk/students/academic-calendar",
+          "field": "term_dates",
+          "fetched_at": "2026-04-15"
+        }
+      ],
+      "notes": "Term 2 末理论课基本结束，Term 3 主要用于毕业论文。",
+      "last_verified": "2026-04-15"
+    },
+    {
+      "id": "lse",
+      "name_en": "London School of Economics and Political Science",
+      "name_zh": "伦敦政治经济学院",
+      "aliases": ["LSE", "G5", "伦敦政经"],
+      "country": "GB",
+      "qs_rank_2026": 50,
+      "program_length_months": 12,
+      "term_system": "3-term",
+      "academic_year_start": "2025-09-29",
+      "coursework_end_avg": "2026-03-27",
+      "acc_weeks": 25,
+      "tier": "T1",
+      "tier_label": "顶级",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://www.lse.ac.uk/calendar/dates",
+          "field": "term_dates",
+          "fetched_at": "2026-04-15"
+        }
+      ],
+      "notes": "Lent Term 末理论课基本结束。",
+      "last_verified": "2026-04-15"
+    },
+    {
+      "id": "edinburgh",
+      "name_en": "University of Edinburgh",
+      "name_zh": "爱丁堡大学",
+      "aliases": ["Edin", "爱大"],
+      "country": "GB",
+      "qs_rank_2026": 27,
+      "program_length_months": 12,
+      "term_system": "semester",
+      "academic_year_start": "2025-09-15",
+      "coursework_end_avg": "2026-04-03",
+      "acc_weeks": 28,
+      "tier": "T1",
+      "tier_label": "顶级",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://www.ed.ac.uk/semester-dates",
+          "field": "term_dates",
+          "fetched_at": "2026-04-15"
+        }
+      ],
+      "last_verified": "2026-04-15"
+    },
+    {
+      "id": "columbia",
+      "name_en": "Columbia University",
+      "name_zh": "哥伦比亚大学",
+      "aliases": ["Columbia", "哥大", "CU"],
+      "country": "US",
+      "qs_rank_2026": 20,
+      "program_length_months": 24,
+      "term_system": "semester",
+      "academic_year_start": "2025-09-02",
+      "coursework_end_avg": "2026-05-08",
+      "acc_weeks": 35,
+      "tier": "T2",
+      "tier_label": "人上人",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://www.columbia.edu/content/academic-calendar",
+          "field": "term_dates",
+          "fetched_at": "2026-04-15"
+        }
+      ],
+      "notes": "美式学期制，Spring Semester 5 月初结束。两年制项目第一学年视图。",
+      "last_verified": "2026-04-15"
+    },
+    {
+      "id": "nyu",
+      "name_en": "New York University",
+      "name_zh": "纽约大学",
+      "aliases": ["NYU", "纽大"],
+      "country": "US",
+      "qs_rank_2026": 39,
+      "program_length_months": 24,
+      "term_system": "semester",
+      "academic_year_start": "2025-09-02",
+      "coursework_end_avg": "2026-05-15",
+      "acc_weeks": 36,
+      "tier": "T2",
+      "tier_label": "人上人",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://www.nyu.edu/registrar/calendars/university-academic-calendar.html",
+          "field": "term_dates",
+          "fetched_at": "2026-04-15"
+        }
+      ],
+      "notes": "美式学期制，Spring Semester 5 月中结束。两年制项目第一学年视图。",
+      "last_verified": "2026-04-15"
+    },
+    {
+      "id": "ethz",
+      "name_en": "ETH Zurich",
+      "name_zh": "苏黎世联邦理工学院",
+      "aliases": ["ETH", "苏黎世联邦理工", "ETHZ"],
+      "country": "CH",
+      "qs_rank_2026": 7,
+      "program_length_months": 24,
+      "term_system": "semester",
+      "academic_year_start": "2025-09-15",
+      "coursework_end_avg": "2026-06-19",
+      "acc_weeks": 39,
+      "tier": "T3",
+      "tier_label": "NPC",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://ethz.ch/students/en/studies/important-dates.html",
+          "field": "term_dates",
+          "fetched_at": "2026-04-15"
+        }
+      ],
+      "notes": "欧陆学制，Frühjahrssemester 教学到 5 月底，考试期延伸到 6 月中下旬。",
+      "last_verified": "2026-04-15"
+    },
+    {
+      "id": "tu-munich",
+      "name_en": "Technical University of Munich",
+      "name_zh": "慕尼黑工业大学",
+      "aliases": ["TUM", "TU München", "慕尼黑工大"],
+      "country": "DE",
+      "qs_rank_2026": 22,
+      "program_length_months": 24,
+      "term_system": "semester",
+      "academic_year_start": "2025-10-13",
+      "coursework_end_avg": "2026-07-25",
+      "acc_weeks": 40,
+      "tier": "T3",
+      "tier_label": "NPC",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://www.tum.de/en/studies/application/general-information/semester-dates",
+          "field": "term_dates",
+          "fetched_at": "2026-04-15"
+        }
+      ],
+      "notes": "德国学制 Sommersemester 拉到 7 月底。",
+      "last_verified": "2026-04-15"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ACC Index Schools Database",
+  "type": "object",
+  "required": ["version", "updated_at", "schools"],
+  "properties": {
+    "version": { "type": "string" },
+    "updated_at": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "schools": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/school" }
+    }
+  },
+  "definitions": {
+    "school": {
+      "type": "object",
+      "required": [
+        "id",
+        "name_en",
+        "name_zh",
+        "aliases",
+        "country",
+        "qs_rank_2026",
+        "program_length_months",
+        "term_system",
+        "academic_year_start",
+        "coursework_end_avg",
+        "acc_weeks",
+        "tier",
+        "tier_label",
+        "confidence",
+        "data_sources",
+        "last_verified"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "name_en": { "type": "string", "minLength": 1 },
+        "name_zh": { "type": "string", "minLength": 1 },
+        "aliases": { "type": "array", "items": { "type": "string" } },
+        "country": { "type": "string", "pattern": "^[A-Z]{2}$" },
+        "qs_rank_2026": { "type": "integer", "minimum": 1, "maximum": 100 },
+        "program_length_months": { "type": "integer", "enum": [12, 18, 24] },
+        "term_system": { "type": "string", "enum": ["semester", "3-term", "quarter", "other"] },
+        "academic_year_start": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+        "coursework_end_avg": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+        "acc_weeks": { "type": "integer", "minimum": 0, "maximum": 80 },
+        "tier": { "type": "string", "enum": ["T0", "T1", "T2", "T3"] },
+        "tier_label": { "type": "string", "enum": ["夯爆了", "顶级", "人上人", "NPC"] },
+        "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
+        "data_sources": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["type", "url", "field"],
+            "additionalProperties": false,
+            "properties": {
+              "type": { "type": "string", "enum": ["official", "community", "inferred"] },
+              "url": { "type": "string", "format": "uri" },
+              "field": { "type": "string" },
+              "fetched_at": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
+            }
+          }
+        },
+        "notes": { "type": "string" },
+        "last_verified": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
+      }
+    }
+  }
+}
