@@ -635,6 +635,365 @@
       ],
       "notes": "3-term 制（Autumn / Spring / Summer，每 term 10 周）。授课主要集中在 Autumn + Spring，Summer Term 用于考试与 dissertation（少数学科 Summer Term 仍有授课）。结课日按 Spring Term 末计，与 Imperial / UCL 口径一致。",
       "last_verified": "2026-05-01"
+    },
+    {
+      "id": "mit",
+      "name_en": "Massachusetts Institute of Technology",
+      "name_zh": "麻省理工学院",
+      "aliases": [
+        "MIT",
+        "麻省理工",
+        "麻理"
+      ],
+      "country": "US",
+      "qs_rank_2026": 1,
+      "program_length_months": 24,
+      "term_system": "semester",
+      "academic_year_start": "2025-09-03",
+      "coursework_end_avg": "2026-05-12",
+      "acc_weeks": 35,
+      "tier": "T2",
+      "tier_label": "人上人",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://registrar.mit.edu/calendar/class-days",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "Semester 制。Fall 9/3–12/10（含期末），Spring 教学 2/2–5/12。两年制项目第一学年视图，Spring 后 final exam 与 dissertation。",
+      "last_verified": "2026-05-01"
+    },
+    {
+      "id": "stanford",
+      "name_en": "Stanford University",
+      "name_zh": "斯坦福大学",
+      "aliases": [
+        "Stanford",
+        "斯坦福",
+        "斯坦"
+      ],
+      "country": "US",
+      "qs_rank_2026": 3,
+      "program_length_months": 24,
+      "term_system": "quarter",
+      "academic_year_start": "2025-09-22",
+      "coursework_end_avg": "2026-06-03",
+      "acc_weeks": 36,
+      "tier": "T3",
+      "tier_label": "NPC",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://studentservices.stanford.edu/calendar-events/academic-calendars/stanford-academic-calendar-2025-2026",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "Quarter 制。Autumn 9/22–12/5、Winter 1/5–3/20、Spring 3/30–6/3，三个 quarter 全程授课。Spring quarter 末 last day of classes 6/3，比 semester 制晚一个月。⚠️ Quarter 制是美国少数学校采用的 10 周制，授课密度高、学年拖长，按本库口径会落 T3。",
+      "last_verified": "2026-05-01"
+    },
+    {
+      "id": "harvard",
+      "name_en": "Harvard University",
+      "name_zh": "哈佛大学",
+      "aliases": [
+        "Harvard",
+        "哈佛"
+      ],
+      "country": "US",
+      "qs_rank_2026": 5,
+      "program_length_months": 24,
+      "term_system": "semester",
+      "academic_year_start": "2025-09-02",
+      "coursework_end_avg": "2026-04-29",
+      "acc_weeks": 34,
+      "tier": "T1",
+      "tier_label": "顶级",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://registrar.fas.harvard.edu/calendars",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "Semester 制（Harvard GSAS 视图）。Fall 教学 9/2–12/3，Spring 教学 1/26–4/29，Reading Period 4/30–5/6 + Final Exam 5/7–5/16。理论课 4 月底结束，是 IVY 中相对早的。",
+      "last_verified": "2026-05-01"
+    },
+    {
+      "id": "caltech",
+      "name_en": "California Institute of Technology",
+      "name_zh": "加州理工学院",
+      "aliases": [
+        "Caltech",
+        "加州理工",
+        "加理"
+      ],
+      "country": "US",
+      "qs_rank_2026": 10,
+      "program_length_months": 24,
+      "term_system": "quarter",
+      "academic_year_start": "2025-09-29",
+      "coursework_end_avg": "2026-06-05",
+      "acc_weeks": 35,
+      "tier": "T3",
+      "tier_label": "NPC",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://catalog.caltech.edu/current/academic-calendar/",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "Quarter 制（三学期，9 周制）。Fall 9/29 起，Spring term 3/30–6/5，commencement 6/12。三个 quarter 全程授课，按本库口径落 T3。",
+      "last_verified": "2026-05-01"
+    },
+    {
+      "id": "chicago",
+      "name_en": "University of Chicago",
+      "name_zh": "芝加哥大学",
+      "aliases": [
+        "UChicago",
+        "Chicago",
+        "芝大"
+      ],
+      "country": "US",
+      "qs_rank_2026": 13,
+      "program_length_months": 24,
+      "term_system": "quarter",
+      "academic_year_start": "2025-09-29",
+      "coursework_end_avg": "2026-06-06",
+      "acc_weeks": 35,
+      "tier": "T3",
+      "tier_label": "NPC",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://events.uchicago.edu/academic/calendar/year.php",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "Quarter 制（三学期，10 周制）。Fall 9/29 起，Spring quarter 末 6/6 commencement。三个 quarter 全程授课，按本库口径落 T3。",
+      "last_verified": "2026-05-01"
+    },
+    {
+      "id": "upenn",
+      "name_en": "University of Pennsylvania",
+      "name_zh": "宾夕法尼亚大学",
+      "aliases": [
+        "UPenn",
+        "Penn",
+        "宾大"
+      ],
+      "country": "US",
+      "qs_rank_2026": 15,
+      "program_length_months": 24,
+      "term_system": "semester",
+      "academic_year_start": "2025-08-26",
+      "coursework_end_avg": "2026-04-29",
+      "acc_weeks": 35,
+      "tier": "T1",
+      "tier_label": "顶级",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://almanac.upenn.edu/penn-academic-calendar",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "Semester 制。Fall 教学 8/26 起，Spring 教学 1/14–4/29，Reading Days 4/30–5/3 + Final Exam 5/4–5/12。理论课 4 月底结束，与 Harvard 同档。",
+      "last_verified": "2026-05-01"
+    },
+    {
+      "id": "cornell",
+      "name_en": "Cornell University",
+      "name_zh": "康奈尔大学",
+      "aliases": [
+        "Cornell",
+        "康奈尔",
+        "康村"
+      ],
+      "country": "US",
+      "qs_rank_2026": 16,
+      "program_length_months": 24,
+      "term_system": "semester",
+      "academic_year_start": "2025-08-25",
+      "coursework_end_avg": "2026-05-12",
+      "acc_weeks": 37,
+      "tier": "T2",
+      "tier_label": "人上人",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://registrar.cornell.edu/academic-calendar",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "Semester 制。Fall 教学 8/25–12/8，Spring 教学 1/20–5/12。Cornell 学年开学比多数美校早，跨度 37 周（春招友好度受结课月份影响为主）。",
+      "last_verified": "2026-05-01"
+    },
+    {
+      "id": "berkeley",
+      "name_en": "University of California, Berkeley",
+      "name_zh": "加州大学伯克利分校",
+      "aliases": [
+        "UC Berkeley",
+        "Berkeley",
+        "UCB",
+        "伯克利"
+      ],
+      "country": "US",
+      "qs_rank_2026": 17,
+      "program_length_months": 24,
+      "term_system": "semester",
+      "academic_year_start": "2025-08-27",
+      "coursework_end_avg": "2026-05-01",
+      "acc_weeks": 35,
+      "tier": "T2",
+      "tier_label": "人上人",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://registrar.berkeley.edu/calendars/academic-calendar/",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "Semester 制（注意：UC 系统中 Berkeley/UCSD 走 semester，UCLA 走 quarter）。Fall 教学 8/27 起，Spring formal classes end 5/1，RRR Week 5/4–5/8。",
+      "last_verified": "2026-05-01"
+    },
+    {
+      "id": "yale",
+      "name_en": "Yale University",
+      "name_zh": "耶鲁大学",
+      "aliases": [
+        "Yale",
+        "耶鲁"
+      ],
+      "country": "US",
+      "qs_rank_2026": 21,
+      "program_length_months": 24,
+      "term_system": "semester",
+      "academic_year_start": "2025-08-27",
+      "coursework_end_avg": "2026-04-24",
+      "acc_weeks": 34,
+      "tier": "T1",
+      "tier_label": "顶级",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://gsas.yale.edu/resources/academic-calendar",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "Semester 制（Yale GSAS 视图）。Fall 教学 8/27 起，Spring GSAS classes end 在 Reading Period 之前（约 4/24），早于 Yale College。Final exam 5 月初。理论课 4 月底结束。",
+      "last_verified": "2026-05-01"
+    },
+    {
+      "id": "jhu",
+      "name_en": "Johns Hopkins University",
+      "name_zh": "约翰斯·霍普金斯大学",
+      "aliases": [
+        "JHU",
+        "Hopkins",
+        "霍普金斯",
+        "约翰霍普金斯"
+      ],
+      "country": "US",
+      "qs_rank_2026": 24,
+      "program_length_months": 24,
+      "term_system": "semester",
+      "academic_year_start": "2025-08-25",
+      "coursework_end_avg": "2026-04-27",
+      "acc_weeks": 35,
+      "tier": "T1",
+      "tier_label": "顶级",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://e-catalogue.jhu.edu/university-wide-policies-information/academic-policies-information/calendar/",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "Semester 制。Fall 教学 8/25–12/5，Spring 教学 1/20–4/27，Reading Days 4/28–5/1 + Final Exam 5/4–5/12。理论课 4 月底结束。",
+      "last_verified": "2026-05-01"
+    },
+    {
+      "id": "princeton",
+      "name_en": "Princeton University",
+      "name_zh": "普林斯顿大学",
+      "aliases": [
+        "Princeton",
+        "普林",
+        "普林斯顿"
+      ],
+      "country": "US",
+      "qs_rank_2026": 25,
+      "program_length_months": 24,
+      "term_system": "semester",
+      "academic_year_start": "2025-09-02",
+      "coursework_end_avg": "2026-05-01",
+      "acc_weeks": 34,
+      "tier": "T2",
+      "tier_label": "人上人",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://registrar.princeton.edu/academic-calendar-and-deadlines",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "Semester 制。Fall 教学 9/2–12/4，Spring 教学 1/26–5/1，Reading Period 5/2–5/7 + Final Assessments 5/8–5/14。理论课 5 月初结束，比同档 Harvard/Yale 略晚。",
+      "last_verified": "2026-05-01"
+    },
+    {
+      "id": "brown",
+      "name_en": "Brown University",
+      "name_zh": "布朗大学",
+      "aliases": [
+        "Brown",
+        "布朗"
+      ],
+      "country": "US",
+      "qs_rank_2026": 69,
+      "program_length_months": 24,
+      "term_system": "semester",
+      "academic_year_start": "2025-09-03",
+      "coursework_end_avg": "2026-05-05",
+      "acc_weeks": 34,
+      "tier": "T2",
+      "tier_label": "人上人",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://registrar.brown.edu/academic-calendar/2025-2026-academic-calendar",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "Semester 制。Fall 教学 9/3 起，Spring 教学 1/21–5/5，Reading Period 至 5/5 + Final Exam 5/6–5/15。",
+      "last_verified": "2026-05-01"
     }
   ]
 }
