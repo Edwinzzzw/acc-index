@@ -2,12 +2,23 @@ import { useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { loadSchools } from '../data/loader';
 import { TIER_COLORS, TIER_LABELS } from '../lib/tier';
+import { fuzzyMonthLabel } from '../lib/dateFormat';
 import type { School, Tier } from '../lib/types';
 
 export function LeaderboardPage() {
   const db = useMemo(() => loadSchools(), []);
   const sorted = useMemo(
-    () => [...db.schools].sort((a, b) => a.acc_weeks - b.acc_weeks),
+    () =>
+      [...db.schools].sort((a, b) => {
+        // 主排序：按结课日期从早到晚（与 tier 划档同源，避免"32 周 T2"
+        // 排在"35 周 T2"之后这种因周数排序产生的视觉错乱）
+        if (a.coursework_end_avg !== b.coursework_end_avg) {
+          return a.coursework_end_avg < b.coursework_end_avg ? -1 : 1;
+        }
+        // 二级排序：同一天结课时，开学晚 / 周数少的在前
+        // —— 同样 5/1 结课，acc_weeks 越小代表实际"受罪时间"越短
+        return a.acc_weeks - b.acc_weeks;
+      }),
     [db],
   );
 
@@ -22,7 +33,7 @@ export function LeaderboardPage() {
           ACC 排行榜
         </h1>
         <p className="mt-2 text-sm text-neutral-500 sm:text-base">
-          按「开学到结课的周数」从短到长排序。越靠前 = 越早放飞。
+          按「什么时候结课」从早到晚排序。越靠前 = 越早放飞。
         </p>
       </header>
 
@@ -63,8 +74,12 @@ function Row({ school, rank }: { school: School; rank: number }) {
         <div className="truncate text-xs text-neutral-500">{school.name_en}</div>
       </div>
       <div className="text-right">
-        <div className="text-base font-bold text-neutral-900 sm:text-lg">{school.acc_weeks} 周</div>
-        <div className="text-[10px] text-neutral-400 sm:text-xs">QS #{school.qs_rank_2026}</div>
+        <div className="text-base font-bold text-neutral-900 sm:text-lg">
+          {fuzzyMonthLabel(school.coursework_end_avg)}
+        </div>
+        <div className="text-[10px] text-neutral-400 sm:text-xs">
+          {school.acc_weeks} 周 · QS #{school.qs_rank_2026}
+        </div>
       </div>
     </Link>
   );
