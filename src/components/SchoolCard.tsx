@@ -2,6 +2,7 @@ import { useState } from 'react';
 import type { School } from '../lib/types';
 import { TIER_DESCRIPTIONS } from '../lib/tier';
 import { pickMadTalk } from '../lib/madTalk';
+import { fuzzyMonthLabel, formatDateShort, formatMonthDay } from '../lib/dateFormat';
 import { TierBadge } from './TierBadge';
 import { CopyLinkButton } from './CopyLinkButton';
 
@@ -58,11 +59,19 @@ export function SchoolCard({ school, defaultMadOpen = false }: Props) {
       </header>
 
       <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-4 sm:gap-3">
-        <Stat label="ACC 周数" value={`${school.acc_weeks} 周`} hint="开学到结课" />
+        {/*
+         * 重排序：平均结课在第一格，作为 tier 划档的视觉锚点。
+         * 主数字用模糊月份（"5 月中"），精确日期与开学日下沉到 hint。
+         */}
         <Stat
           label="平均结课"
-          value={formatDateShort(school.coursework_end_avg)}
-          hint={`开学：${formatDateShort(school.academic_year_start)}`}
+          value={fuzzyMonthLabel(school.coursework_end_avg)}
+          hint={`${formatMonthDay(school.coursework_end_avg)} · ${formatMonthDay(school.academic_year_start)} 开学`}
+        />
+        <Stat
+          label="ACC 周数"
+          value={`${school.acc_weeks} 周`}
+          hint="开学到结课"
         />
         <Stat label="QS 排名" value={`#${school.qs_rank_2026}`} hint="2026 榜" />
         <Stat label="项目长度" value={monthsText} hint={termSystemText(school.term_system)} />
@@ -139,11 +148,6 @@ function Stat({ label, value, hint }: { label: string; value: string; hint?: str
       {hint && <div className="mt-0.5 text-[10px] text-neutral-400 sm:text-xs">{hint}</div>}
     </div>
   );
-}
-
-function formatDateShort(iso: string): string {
-  const [y, m, d] = iso.split('-');
-  return `${y}/${m}/${d}`;
 }
 
 function termSystemText(t: string): string {
