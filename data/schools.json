@@ -994,6 +994,368 @@
       ],
       "notes": "Semester 制。Fall 教学 9/3 起，Spring 教学 1/21–5/5，Reading Period 至 5/5 + Final Exam 5/6–5/15。",
       "last_verified": "2026-05-01"
+    },
+    {
+      "id": "northwestern",
+      "name_en": "Northwestern University",
+      "name_zh": "西北大学",
+      "aliases": [
+        "Northwestern",
+        "NU",
+        "西北"
+      ],
+      "country": "US",
+      "qs_rank_2026": 42,
+      "program_length_months": 24,
+      "term_system": "quarter",
+      "academic_year_start": "2025-09-16",
+      "coursework_end_avg": "2026-06-06",
+      "acc_weeks": 37,
+      "tier": "T3",
+      "tier_label": "NPC",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://catalogs.northwestern.edu/undergraduate/academic-calendar/academic-calendar.pdf",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "Quarter 制。Fall 9/16–12/13、Winter 1/5–3/21、Spring 3/31–6/12，三 quarter 全程授课。Spring quarter last day of classes 6/6，比 semester 制晚约一个月。⚠️ Quarter 制是 10 周制、授课密度高、学年拖长，按本库口径落 T3。",
+      "last_verified": "2026-05-01"
+    },
+    {
+      "id": "umich",
+      "name_en": "University of Michigan-Ann Arbor",
+      "name_zh": "密歇根大学安娜堡分校",
+      "aliases": [
+        "UMich",
+        "Michigan",
+        "U-M",
+        "密大",
+        "密歇根"
+      ],
+      "country": "US",
+      "qs_rank_2026": 45,
+      "program_length_months": 24,
+      "term_system": "semester",
+      "academic_year_start": "2025-08-25",
+      "coursework_end_avg": "2026-04-21",
+      "acc_weeks": 34,
+      "tier": "T1",
+      "tier_label": "顶级",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://ro.umich.edu/sites/default/files/calendar/pdfs/Cal_2025-2026.pdf",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "美式学期制。Winter Semester 4 月 21 日 classes end，比多数 semester 制学校早约一周结课。两年制项目第一学年视图。",
+      "last_verified": "2026-05-01"
+    },
+    {
+      "id": "ucla",
+      "name_en": "University of California, Los Angeles",
+      "name_zh": "加州大学洛杉矶分校",
+      "aliases": [
+        "UCLA",
+        "洛杉矶加大"
+      ],
+      "country": "US",
+      "qs_rank_2026": 46,
+      "program_length_months": 24,
+      "term_system": "quarter",
+      "academic_year_start": "2025-09-25",
+      "coursework_end_avg": "2026-06-05",
+      "acc_weeks": 36,
+      "tier": "T3",
+      "tier_label": "NPC",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://registrar.ucla.edu/portals/50/documents/calendar/academiccalendar25-26.pdf",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "Quarter 制。Fall 9/25–12/12、Winter 1/5–3/20、Spring 3/30–6/12，三个 quarter 全程授课。Spring quarter Instruction ends 6/5，比 semester 制晚约一个月。⚠️ Quarter 制是 10 周制、授课密度高、学年拖长，按本库口径落 T3。",
+      "last_verified": "2026-05-01"
+    },
+    {
+      "id": "cmu",
+      "name_en": "Carnegie Mellon University",
+      "name_zh": "卡内基梅隆大学",
+      "aliases": [
+        "CMU",
+        "Carnegie Mellon",
+        "卡梅",
+        "卡内基"
+      ],
+      "country": "US",
+      "qs_rank_2026": 52,
+      "program_length_months": 24,
+      "term_system": "semester",
+      "academic_year_start": "2025-08-25",
+      "coursework_end_avg": "2026-04-24",
+      "acc_weeks": 34,
+      "tier": "T1",
+      "tier_label": "顶级",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://www.cmu.edu/hub/calendar/",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "美式学期制。Spring Semester 4 月 24 日 last day of classes。Mini-3/Mini-4 半学期课程时长更短。两年制项目第一学年视图。",
+      "last_verified": "2026-05-01"
+    },
+    {
+      "id": "duke",
+      "name_en": "Duke University",
+      "name_zh": "杜克大学",
+      "aliases": [
+        "Duke",
+        "杜克"
+      ],
+      "country": "US",
+      "qs_rank_2026": 62,
+      "program_length_months": 24,
+      "term_system": "semester",
+      "academic_year_start": "2025-08-25",
+      "coursework_end_avg": "2026-04-22",
+      "acc_weeks": 34,
+      "tier": "T1",
+      "tier_label": "顶级",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://registrar.duke.edu/2025-2026-academic-calendar/",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "美式学期制。Spring Semester 4 月 22 日 undergraduate classes end，graduate classes 4 月 15 日更早结课。两年制项目第一学年视图。",
+      "last_verified": "2026-05-01"
+    },
+    {
+      "id": "ucsd",
+      "name_en": "University of California, San Diego",
+      "name_zh": "加州大学圣地亚哥分校",
+      "aliases": [
+        "UCSD",
+        "UC San Diego",
+        "圣地亚哥加大"
+      ],
+      "country": "US",
+      "qs_rank_2026": 66,
+      "program_length_months": 24,
+      "term_system": "quarter",
+      "academic_year_start": "2025-09-25",
+      "coursework_end_avg": "2026-06-05",
+      "acc_weeks": 36,
+      "tier": "T3",
+      "tier_label": "NPC",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://blink.ucsd.edu/instructors/resources/academic/calendars/2025.html",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "Quarter 制。Fall 9/25–12/13、Winter 1/5–3/21、Spring 3/30–6/12，三个 quarter 全程授课。Spring quarter Instruction ends 6/5，比 semester 制晚约一个月。⚠️ Quarter 制是 10 周制、授课密度高、学年拖长，按本库口径落 T3。",
+      "last_verified": "2026-05-01"
+    },
+    {
+      "id": "ut-austin",
+      "name_en": "The University of Texas at Austin",
+      "name_zh": "得克萨斯大学奥斯汀分校",
+      "aliases": [
+        "UT Austin",
+        "UT",
+        "Texas",
+        "德州大学奥斯汀"
+      ],
+      "country": "US",
+      "qs_rank_2026": 68,
+      "program_length_months": 24,
+      "term_system": "semester",
+      "academic_year_start": "2025-08-25",
+      "coursework_end_avg": "2026-04-27",
+      "acc_weeks": 35,
+      "tier": "T1",
+      "tier_label": "顶级",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://registrar.utexas.edu/calendars/25-26",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "美式学期制。Spring Term 4 月 27 日 last class day。两年制项目第一学年视图。",
+      "last_verified": "2026-05-01"
+    },
+    {
+      "id": "uiuc",
+      "name_en": "University of Illinois Urbana-Champaign",
+      "name_zh": "伊利诺伊大学厄巴纳-香槟分校",
+      "aliases": [
+        "UIUC",
+        "Illinois",
+        "厄香伊大",
+        "伊大"
+      ],
+      "country": "US",
+      "qs_rank_2026": 70,
+      "program_length_months": 24,
+      "term_system": "semester",
+      "academic_year_start": "2025-08-25",
+      "coursework_end_avg": "2026-05-06",
+      "acc_weeks": 36,
+      "tier": "T2",
+      "tier_label": "人上人",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://senate.illinois.edu/academic_calendars/2025-2026ac.pdf",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "美式学期制。Spring Semester 5 月 6 日 instruction ends，落在 5 月初属典型 semester 节奏。两年制项目第一学年视图。",
+      "last_verified": "2026-05-01"
+    },
+    {
+      "id": "uw",
+      "name_en": "University of Washington",
+      "name_zh": "华盛顿大学",
+      "aliases": [
+        "UW",
+        "U-Dub",
+        "华大"
+      ],
+      "country": "US",
+      "qs_rank_2026": 81,
+      "program_length_months": 24,
+      "term_system": "quarter",
+      "academic_year_start": "2025-09-24",
+      "coursework_end_avg": "2026-06-05",
+      "acc_weeks": 36,
+      "tier": "T3",
+      "tier_label": "NPC",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://www.washington.edu/students/reg/2526cal.html",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "Quarter 制。Autumn 9/24–12/12、Winter 1/5–3/20、Spring 3/30–6/12，三个 quarter 全程授课。Spring quarter last day of instruction 6/5，比 semester 制晚约一个月。⚠️ Quarter 制是 10 周制、授课密度高、学年拖长，按本库口径落 T3。",
+      "last_verified": "2026-05-01"
+    },
+    {
+      "id": "penn-state",
+      "name_en": "Pennsylvania State University",
+      "name_zh": "宾夕法尼亚州立大学",
+      "aliases": [
+        "Penn State",
+        "PSU",
+        "宾州州立"
+      ],
+      "country": "US",
+      "qs_rank_2026": 82,
+      "program_length_months": 24,
+      "term_system": "semester",
+      "academic_year_start": "2025-08-25",
+      "coursework_end_avg": "2026-05-01",
+      "acc_weeks": 35,
+      "tier": "T2",
+      "tier_label": "人上人",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://www.registrar.psu.edu/academic-calendars/2025-26.cfm",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "美式学期制。Spring Semester 5 月 1 日 classes end。两年制项目第一学年视图。",
+      "last_verified": "2026-05-01"
+    },
+    {
+      "id": "bu",
+      "name_en": "Boston University",
+      "name_zh": "波士顿大学",
+      "aliases": [
+        "BU",
+        "波大",
+        "波士顿"
+      ],
+      "country": "US",
+      "qs_rank_2026": 88,
+      "program_length_months": 24,
+      "term_system": "semester",
+      "academic_year_start": "2025-09-02",
+      "coursework_end_avg": "2026-04-30",
+      "acc_weeks": 34,
+      "tier": "T1",
+      "tier_label": "顶级",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://www.bu.edu/reg/calendars/",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "美式学期制。Fall classes 9 月 2 日开学（晚于多数美校）、Spring 4 月 30 日 last day of classes。两年制项目第一学年视图。",
+      "last_verified": "2026-05-01"
+    },
+    {
+      "id": "purdue",
+      "name_en": "Purdue University",
+      "name_zh": "普渡大学",
+      "aliases": [
+        "Purdue",
+        "普渡"
+      ],
+      "country": "US",
+      "qs_rank_2026": 88,
+      "program_length_months": 24,
+      "term_system": "semester",
+      "academic_year_start": "2025-08-25",
+      "coursework_end_avg": "2026-05-02",
+      "acc_weeks": 35,
+      "tier": "T2",
+      "tier_label": "人上人",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://catalog.purdue.edu/content.php?catoid=15&navoid=18674",
+          "field": "term_dates",
+          "fetched_at": "2026-05-01"
+        }
+      ],
+      "notes": "美式学期制。Spring Semester 5 月 2 日 classes end。两年制项目第一学年视图。",
+      "last_verified": "2026-05-01"
     }
   ]
 }
