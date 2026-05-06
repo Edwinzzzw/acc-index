@@ -1,1500 +1,691 @@
-{
-  "version": "0.1.0-seed",
-  "updated_at": "2026-05-01",
-  "schools": [
-    {
-      "id": "mit",
-      "name_en": "Massachusetts Institute of Technology",
-      "name_zh": "麻省理工学院",
-      "aliases": [
-        "MIT",
-        "麻省理工",
-        "麻理"
-      ],
-      "country": "US",
-      "qs_rank_2026": 1,
-      "program_length_months": 24,
-      "term_system": "semester",
-      "academic_year_start": "2025-09-03",
-      "coursework_end_avg": "2026-05-12",
-      "acc_weeks": 35,
-      "tier": "T2",
-      "tier_label": "人上人",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://registrar.mit.edu/calendar/class-days",
-          "field": "term_dates",
-          "fetched_at": "2026-05-01"
-        }
-      ],
-      "notes": "Semester 制。Fall 9/3–12/10（含期末），Spring 教学 2/2–5/12。两年制项目第一学年视图，Spring 后 final exam 与 dissertation。",
-      "last_verified": "2026-05-01"
-    },
-    {
-      "id": "imperial",
-      "name_en": "Imperial College London",
-      "name_zh": "帝国理工学院",
-      "aliases": [
-        "IC",
-        "ICL",
-        "帝国理工",
-        "Imperial"
-      ],
-      "country": "GB",
-      "qs_rank_2026": 2,
-      "program_length_months": 12,
-      "term_system": "3-term",
-      "academic_year_start": "2025-09-29",
-      "coursework_end_avg": "2026-03-20",
-      "acc_weeks": 24,
-      "tier": "T1",
-      "tier_label": "顶级",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://www.imperial.ac.uk/students/academic-calendar/",
-          "field": "term_dates",
-          "fetched_at": "2026-04-15"
-        }
-      ],
-      "notes": "Spring Term 末理论课基本结束，Summer Term 主要用于毕业论文。",
-      "last_verified": "2026-04-15"
-    },
-    {
-      "id": "stanford",
-      "name_en": "Stanford University",
-      "name_zh": "斯坦福大学",
-      "aliases": [
-        "Stanford",
-        "斯坦福",
-        "斯坦"
-      ],
-      "country": "US",
-      "qs_rank_2026": 3,
-      "program_length_months": 24,
-      "term_system": "quarter",
-      "academic_year_start": "2025-09-22",
-      "coursework_end_avg": "2026-06-03",
-      "acc_weeks": 36,
-      "tier": "T3",
-      "tier_label": "NPC",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://studentservices.stanford.edu/calendar-events/academic-calendars/stanford-academic-calendar-2025-2026",
-          "field": "term_dates",
-          "fetched_at": "2026-05-01"
-        }
-      ],
-      "notes": "Quarter 制。Autumn 9/22–12/5、Winter 1/5–3/20、Spring 3/30–6/3，三个 quarter 全程授课。Spring quarter 末 last day of classes 6/3，比 semester 制晚一个月。⚠️ Quarter 制是美国少数学校采用的 10 周制，授课密度高、学年拖长，按本库口径会落 T3。",
-      "last_verified": "2026-05-01"
-    },
-    {
-      "id": "oxford",
-      "name_en": "University of Oxford",
-      "name_zh": "牛津大学",
-      "aliases": [
-        "Oxford",
-        "Oxon",
-        "牛津",
-        "牛大"
-      ],
-      "country": "GB",
-      "qs_rank_2026": 4,
-      "program_length_months": 12,
-      "term_system": "3-term",
-      "academic_year_start": "2025-10-12",
-      "coursework_end_avg": "2026-03-14",
-      "acc_weeks": 21,
-      "tier": "T1",
-      "tier_label": "顶级",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://www.ox.ac.uk/about/facts-and-figures/dates-of-term",
-          "field": "term_dates",
-          "fetched_at": "2026-05-01"
-        }
-      ],
-      "notes": "3-term 制（Michaelmas / Hilary / Trinity，每 term 8 周 Full Term）。MSc 主流模式：Michaelmas + Hilary 两学期授课，Trinity Term 主要用于 dissertation 与考试。结课日按 Hilary Full Term 末计，与 Imperial 口径一致。",
-      "last_verified": "2026-05-01"
-    },
-    {
-      "id": "harvard",
-      "name_en": "Harvard University",
-      "name_zh": "哈佛大学",
-      "aliases": [
-        "Harvard",
-        "哈佛"
-      ],
-      "country": "US",
-      "qs_rank_2026": 5,
-      "program_length_months": 24,
-      "term_system": "semester",
-      "academic_year_start": "2025-09-02",
-      "coursework_end_avg": "2026-04-29",
-      "acc_weeks": 34,
-      "tier": "T1",
-      "tier_label": "顶级",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://registrar.fas.harvard.edu/calendars",
-          "field": "term_dates",
-          "fetched_at": "2026-05-01"
-        }
-      ],
-      "notes": "Semester 制（Harvard GSAS 视图）。Fall 教学 9/2–12/3，Spring 教学 1/26–4/29，Reading Period 4/30–5/6 + Final Exam 5/7–5/16。理论课 4 月底结束，是 IVY 中相对早的。",
-      "last_verified": "2026-05-01"
-    },
-    {
-      "id": "cambridge",
-      "name_en": "University of Cambridge",
-      "name_zh": "剑桥大学",
-      "aliases": [
-        "Cambridge",
-        "Cantab",
-        "剑桥",
-        "剑大"
-      ],
-      "country": "GB",
-      "qs_rank_2026": 6,
-      "program_length_months": 9,
-      "term_system": "3-term",
-      "academic_year_start": "2025-10-07",
-      "coursework_end_avg": "2026-05-29",
-      "acc_weeks": 33,
-      "tier": "T2",
-      "tier_label": "人上人",
-      "confidence": "low",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://www.cam.ac.uk/about-the-university/term-dates-and-calendars",
-          "field": "term_dates",
-          "fetched_at": "2026-05-01"
-        },
-        {
-          "type": "official",
-          "url": "https://www.jbs.cam.ac.uk/phd-research-masters/mphil-finance/",
-          "field": "program_structure",
-          "fetched_at": "2026-05-01"
-        }
-      ],
-      "notes": "3-term 制（Michaelmas / Lent / Easter，每 term 8 周 Full Term）。授课型项目以 MPhil 为主，多为 9–11 个月制。本数据采用 MPhil Finance / Management 等商科派项目口径，授课延伸至 Easter Term 中段（约 5 月底），dissertation 6 月提交。⚠️ 局限性：理工/社科 MPhil（Engineering / Economics 等）授课普遍持续至 Easter Term 末（约 6 月中），按本库口径将落入 T3；同校项目间差异较大。Phase 4 将按项目级拆分。本条目结课日为基于学制结构的合理估算，无单一官方文档明确写明全校授课结束日，故 confidence = low。",
-      "last_verified": "2026-05-01"
-    },
-    {
-      "id": "ethz",
-      "name_en": "ETH Zurich",
-      "name_zh": "苏黎世联邦理工学院",
-      "aliases": [
-        "ETH",
-        "苏黎世联邦理工",
-        "ETHZ"
-      ],
-      "country": "CH",
-      "qs_rank_2026": 7,
-      "program_length_months": 24,
-      "term_system": "semester",
-      "academic_year_start": "2025-09-15",
-      "coursework_end_avg": "2026-06-19",
-      "acc_weeks": 39,
-      "tier": "T3",
-      "tier_label": "NPC",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://ethz.ch/students/en/studies/important-dates.html",
-          "field": "term_dates",
-          "fetched_at": "2026-04-15"
-        }
-      ],
-      "notes": "欧陆学制，Frühjahrssemester 教学到 5 月底，考试期延伸到 6 月中下旬。",
-      "last_verified": "2026-04-15"
-    },
-    {
-      "id": "ucl",
-      "name_en": "University College London",
-      "name_zh": "伦敦大学学院",
-      "aliases": [
-        "UCL",
-        "宇宙学院",
-        "University College, London"
-      ],
-      "country": "GB",
-      "qs_rank_2026": 9,
-      "program_length_months": 12,
-      "term_system": "3-term",
-      "academic_year_start": "2025-09-22",
-      "coursework_end_avg": "2026-03-27",
-      "acc_weeks": 26,
-      "tier": "T1",
-      "tier_label": "顶级",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://www.ucl.ac.uk/students/academic-calendar",
-          "field": "term_dates",
-          "fetched_at": "2026-04-15"
-        }
-      ],
-      "notes": "Term 2 末理论课基本结束，Term 3 主要用于毕业论文。",
-      "last_verified": "2026-04-15"
-    },
-    {
-      "id": "caltech",
-      "name_en": "California Institute of Technology",
-      "name_zh": "加州理工学院",
-      "aliases": [
-        "Caltech",
-        "加州理工",
-        "加理"
-      ],
-      "country": "US",
-      "qs_rank_2026": 10,
-      "program_length_months": 24,
-      "term_system": "quarter",
-      "academic_year_start": "2025-09-29",
-      "coursework_end_avg": "2026-06-05",
-      "acc_weeks": 35,
-      "tier": "T3",
-      "tier_label": "NPC",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://catalog.caltech.edu/current/academic-calendar/",
-          "field": "term_dates",
-          "fetched_at": "2026-05-01"
-        }
-      ],
-      "notes": "Quarter 制（三学期，9 周制）。Fall 9/29 起，Spring term 3/30–6/5，commencement 6/12。三个 quarter 全程授课，按本库口径落 T3。",
-      "last_verified": "2026-05-01"
-    },
-    {
-      "id": "hku",
-      "name_en": "The University of Hong Kong",
-      "name_zh": "香港大学",
-      "aliases": [
-        "HKU",
-        "港大"
-      ],
-      "country": "HK",
-      "qs_rank_2026": 11,
-      "program_length_months": 12,
-      "term_system": "semester",
-      "academic_year_start": "2025-09-01",
-      "coursework_end_avg": "2025-12-19",
-      "acc_weeks": 15,
-      "tier": "T0",
-      "tier_label": "夯爆了",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://www.hku.hk/about/calendar.html",
-          "field": "term_dates",
-          "fetched_at": "2026-04-15"
-        }
-      ],
-      "notes": "部分授课型项目（如 MSc Finance）课程高度集中在 Semester 1，年底前可结课。具体项目间差异较大，将在 Phase 3 拆分到项目级。",
-      "last_verified": "2026-04-15"
-    },
-    {
-      "id": "chicago",
-      "name_en": "University of Chicago",
-      "name_zh": "芝加哥大学",
-      "aliases": [
-        "UChicago",
-        "Chicago",
-        "芝大"
-      ],
-      "country": "US",
-      "qs_rank_2026": 13,
-      "program_length_months": 24,
-      "term_system": "quarter",
-      "academic_year_start": "2025-09-29",
-      "coursework_end_avg": "2026-06-06",
-      "acc_weeks": 35,
-      "tier": "T3",
-      "tier_label": "NPC",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://events.uchicago.edu/academic/calendar/year.php",
-          "field": "term_dates",
-          "fetched_at": "2026-05-01"
-        }
-      ],
-      "notes": "Quarter 制（三学期，10 周制）。Fall 9/29 起，Spring quarter 末 6/6 commencement。三个 quarter 全程授课，按本库口径落 T3。",
-      "last_verified": "2026-05-01"
-    },
-    {
-      "id": "upenn",
-      "name_en": "University of Pennsylvania",
-      "name_zh": "宾夕法尼亚大学",
-      "aliases": [
-        "UPenn",
-        "Penn",
-        "宾大"
-      ],
-      "country": "US",
-      "qs_rank_2026": 15,
-      "program_length_months": 24,
-      "term_system": "semester",
-      "academic_year_start": "2025-08-26",
-      "coursework_end_avg": "2026-04-29",
-      "acc_weeks": 35,
-      "tier": "T1",
-      "tier_label": "顶级",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://almanac.upenn.edu/penn-academic-calendar",
-          "field": "term_dates",
-          "fetched_at": "2026-05-01"
-        }
-      ],
-      "notes": "Semester 制。Fall 教学 8/26 起，Spring 教学 1/14–4/29，Reading Days 4/30–5/3 + Final Exam 5/4–5/12。理论课 4 月底结束，与 Harvard 同档。",
-      "last_verified": "2026-05-01"
-    },
-    {
-      "id": "cornell",
-      "name_en": "Cornell University",
-      "name_zh": "康奈尔大学",
-      "aliases": [
-        "Cornell",
-        "康奈尔",
-        "康村"
-      ],
-      "country": "US",
-      "qs_rank_2026": 16,
-      "program_length_months": 24,
-      "term_system": "semester",
-      "academic_year_start": "2025-08-25",
-      "coursework_end_avg": "2026-05-12",
-      "acc_weeks": 37,
-      "tier": "T2",
-      "tier_label": "人上人",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://registrar.cornell.edu/academic-calendar",
-          "field": "term_dates",
-          "fetched_at": "2026-05-01"
-        }
-      ],
-      "notes": "Semester 制。Fall 教学 8/25–12/8，Spring 教学 1/20–5/12。Cornell 学年开学比多数美校早，跨度 37 周（春招友好度受结课月份影响为主）。",
-      "last_verified": "2026-05-01"
-    },
-    {
-      "id": "berkeley",
-      "name_en": "University of California, Berkeley",
-      "name_zh": "加州大学伯克利分校",
-      "aliases": [
-        "UC Berkeley",
-        "Berkeley",
-        "UCB",
-        "伯克利"
-      ],
-      "country": "US",
-      "qs_rank_2026": 17,
-      "program_length_months": 24,
-      "term_system": "semester",
-      "academic_year_start": "2025-08-27",
-      "coursework_end_avg": "2026-05-01",
-      "acc_weeks": 35,
-      "tier": "T2",
-      "tier_label": "人上人",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://registrar.berkeley.edu/calendars/academic-calendar/",
-          "field": "term_dates",
-          "fetched_at": "2026-05-01"
-        }
-      ],
-      "notes": "Semester 制（注意：UC 系统中 Berkeley/UCSD 走 semester，UCLA 走 quarter）。Fall 教学 8/27 起，Spring formal classes end 5/1，RRR Week 5/4–5/8。",
-      "last_verified": "2026-05-01"
-    },
-    {
-      "id": "yale",
-      "name_en": "Yale University",
-      "name_zh": "耶鲁大学",
-      "aliases": [
-        "Yale",
-        "耶鲁"
-      ],
-      "country": "US",
-      "qs_rank_2026": 21,
-      "program_length_months": 24,
-      "term_system": "semester",
-      "academic_year_start": "2025-08-27",
-      "coursework_end_avg": "2026-04-24",
-      "acc_weeks": 34,
-      "tier": "T1",
-      "tier_label": "顶级",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://gsas.yale.edu/resources/academic-calendar",
-          "field": "term_dates",
-          "fetched_at": "2026-05-01"
-        }
-      ],
-      "notes": "Semester 制（Yale GSAS 视图）。Fall 教学 8/27 起，Spring GSAS classes end 在 Reading Period 之前（约 4/24），早于 Yale College。Final exam 5 月初。理论课 4 月底结束。",
-      "last_verified": "2026-05-01"
-    },
-    {
-      "id": "epfl",
-      "name_en": "École Polytechnique Fédérale de Lausanne",
-      "name_zh": "洛桑联邦理工学院",
-      "aliases": [
-        "EPFL",
-        "洛桑联邦理工"
-      ],
-      "country": "CH",
-      "qs_rank_2026": 22,
-      "program_length_months": 24,
-      "term_system": "semester",
-      "academic_year_start": "2025-09-08",
-      "coursework_end_avg": "2026-05-20",
-      "acc_weeks": 36,
-      "tier": "T2",
-      "tier_label": "人上人",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://www.epfl.ch/education/studies/en/rules-and-procedures/academic-calendar/",
-          "field": "term_dates",
-          "fetched_at": "2026-05-05"
-        }
-      ],
-      "notes": "Autumn semester 9/8-12/19；Spring lecture period 2/16-5/20；夏季 exam session 6/15-7/4。结课日按 lecture period 末计。",
-      "last_verified": "2026-05-05"
-    },
-    {
-      "id": "tu-munich",
-      "name_en": "Technical University of Munich",
-      "name_zh": "慕尼黑工业大学",
-      "aliases": [
-        "TUM",
-        "TU München",
-        "慕尼黑工大"
-      ],
-      "country": "DE",
-      "qs_rank_2026": 22,
-      "program_length_months": 24,
-      "term_system": "semester",
-      "academic_year_start": "2025-10-13",
-      "coursework_end_avg": "2026-07-25",
-      "acc_weeks": 40,
-      "tier": "T3",
-      "tier_label": "NPC",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://www.tum.de/en/studies/application/general-information/semester-dates",
-          "field": "term_dates",
-          "fetched_at": "2026-04-15"
-        }
-      ],
-      "notes": "德国学制 Sommersemester 拉到 7 月底。",
-      "last_verified": "2026-04-15"
-    },
-    {
-      "id": "jhu",
-      "name_en": "Johns Hopkins University",
-      "name_zh": "约翰斯·霍普金斯大学",
-      "aliases": [
-        "JHU",
-        "Hopkins",
-        "霍普金斯",
-        "约翰霍普金斯"
-      ],
-      "country": "US",
-      "qs_rank_2026": 24,
-      "program_length_months": 24,
-      "term_system": "semester",
-      "academic_year_start": "2025-08-25",
-      "coursework_end_avg": "2026-04-27",
-      "acc_weeks": 35,
-      "tier": "T1",
-      "tier_label": "顶级",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://e-catalogue.jhu.edu/university-wide-policies-information/academic-policies-information/calendar/",
-          "field": "term_dates",
-          "fetched_at": "2026-05-01"
-        }
-      ],
-      "notes": "Semester 制。Fall 教学 8/25–12/5，Spring 教学 1/20–4/27，Reading Days 4/28–5/1 + Final Exam 5/4–5/12。理论课 4 月底结束。",
-      "last_verified": "2026-05-01"
-    },
-    {
-      "id": "princeton",
-      "name_en": "Princeton University",
-      "name_zh": "普林斯顿大学",
-      "aliases": [
-        "Princeton",
-        "普林",
-        "普林斯顿"
-      ],
-      "country": "US",
-      "qs_rank_2026": 25,
-      "program_length_months": 24,
-      "term_system": "semester",
-      "academic_year_start": "2025-09-02",
-      "coursework_end_avg": "2026-05-01",
-      "acc_weeks": 34,
-      "tier": "T2",
-      "tier_label": "人上人",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://registrar.princeton.edu/academic-calendar-and-deadlines",
-          "field": "term_dates",
-          "fetched_at": "2026-05-01"
-        }
-      ],
-      "notes": "Semester 制。Fall 教学 9/2–12/4，Spring 教学 1/26–5/1，Reading Period 5/2–5/7 + Final Assessments 5/8–5/14。理论课 5 月初结束，比同档 Harvard/Yale 略晚。",
-      "last_verified": "2026-05-01"
-    },
-    {
-      "id": "psl",
-      "name_en": "Université PSL",
-      "name_zh": "巴黎文理研究大学",
-      "aliases": [
-        "PSL",
-        "PSL University",
-        "巴黎文理"
-      ],
-      "country": "FR",
-      "qs_rank_2026": 28,
-      "program_length_months": 24,
-      "term_system": "semester",
-      "academic_year_start": "2025-09-15",
-      "coursework_end_avg": "2026-05-29",
-      "acc_weeks": 36,
-      "tier": "T2",
-      "tier_label": "人上人",
-      "confidence": "low",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://psl.eu/en",
-          "field": "term_dates",
-          "fetched_at": "2026-05-05"
-        }
-      ],
-      "notes": "PSL 是 11 所院校联盟（含 ENS、Mines Paris、Dauphine 等），各成员校历差异大；以 Dauphine-PSL Master 模式为代表（S1 Sept-Jan，S2 Jan-May，6-7 月初补考）。confidence=low。",
-      "last_verified": "2026-05-05"
-    },
-    {
-      "id": "kcl",
-      "name_en": "King's College London",
-      "name_zh": "伦敦国王学院",
-      "aliases": [
-        "KCL",
-        "King's",
-        "国王学院"
-      ],
-      "country": "GB",
-      "qs_rank_2026": 31,
-      "program_length_months": 12,
-      "term_system": "semester",
-      "academic_year_start": "2025-09-29",
-      "coursework_end_avg": "2026-05-01",
-      "acc_weeks": 30,
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://self-service.kcl.ac.uk/article/ka-01913/en-us",
-          "field": "term_dates",
-          "fetched_at": "2026-05-01"
-        }
-      ],
-      "notes": "Semester 制。Semester 1 教学 9/29–12/12，Semester 2 教学 1/16–4/2，4/27–5/1 为 teaching/revision week。理论课基本结束于 5 月初。",
-      "last_verified": "2026-05-01",
-      "tier": "T2",
-      "tier_label": "人上人"
-    },
-    {
-      "id": "edinburgh",
-      "name_en": "University of Edinburgh",
-      "name_zh": "爱丁堡大学",
-      "aliases": [
-        "Edin",
-        "爱大"
-      ],
-      "country": "GB",
-      "qs_rank_2026": 34,
-      "program_length_months": 12,
-      "term_system": "semester",
-      "academic_year_start": "2025-09-15",
-      "coursework_end_avg": "2026-04-03",
-      "acc_weeks": 28,
-      "tier": "T1",
-      "tier_label": "顶级",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://www.ed.ac.uk/semester-dates",
-          "field": "term_dates",
-          "fetched_at": "2026-04-15"
-        }
-      ],
-      "last_verified": "2026-04-15"
-    },
-    {
-      "id": "manchester",
-      "name_en": "The University of Manchester",
-      "name_zh": "曼彻斯特大学",
-      "aliases": [
-        "UoM",
-        "Manchester",
-        "曼大"
-      ],
-      "country": "GB",
-      "qs_rank_2026": 35,
-      "program_length_months": 12,
-      "term_system": "semester",
-      "academic_year_start": "2025-09-29",
-      "coursework_end_avg": "2026-05-15",
-      "acc_weeks": 32,
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://www.manchester.ac.uk/about/key-dates/",
-          "field": "term_dates",
-          "fetched_at": "2026-05-01"
-        }
-      ],
-      "notes": "Semester 制。Semester 1 教学 9/29–12/12，Semester 2 教学 2/2–5/15。理论课延伸至 5 月中。",
-      "last_verified": "2026-05-01",
-      "tier": "T2",
-      "tier_label": "人上人"
-    },
-    {
-      "id": "columbia",
-      "name_en": "Columbia University",
-      "name_zh": "哥伦比亚大学",
-      "aliases": [
-        "Columbia",
-        "哥大",
-        "CU"
-      ],
-      "country": "US",
-      "qs_rank_2026": 38,
-      "program_length_months": 24,
-      "term_system": "semester",
-      "academic_year_start": "2025-09-02",
-      "coursework_end_avg": "2026-05-08",
-      "acc_weeks": 35,
-      "tier": "T2",
-      "tier_label": "人上人",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://www.columbia.edu/content/academic-calendar",
-          "field": "term_dates",
-          "fetched_at": "2026-04-15"
-        }
-      ],
-      "notes": "美式学期制，Spring Semester 5 月初结束。两年制项目第一学年视图。",
-      "last_verified": "2026-04-15"
-    },
-    {
-      "id": "ip-paris",
-      "name_en": "Institut Polytechnique de Paris",
-      "name_zh": "巴黎综合理工学院联盟",
-      "aliases": [
-        "IP Paris",
-        "巴黎综合理工"
-      ],
-      "country": "FR",
-      "qs_rank_2026": 41,
-      "program_length_months": 24,
-      "term_system": "trimester",
-      "academic_year_start": "2025-09-01",
-      "coursework_end_avg": "2026-03-20",
-      "acc_weeks": 28,
-      "tier": "T1",
-      "tier_label": "顶级",
-      "confidence": "low",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://programmes.polytechnique.edu/en/master/admissions-msct/faq",
-          "field": "term_dates",
-          "fetched_at": "2026-05-05"
-        }
-      ],
-      "notes": "5 校联盟（École Polytechnique、ENSTA、ENSAE、Télécom Paris、Télécom SudParis），各校历不同；以 l'X MSc&T 三 term 制为代表：T1 Sept-Dec，T2 Jan-Mar（mid-March 结课），T3 Apr-Aug 实习。confidence=low。",
-      "last_verified": "2026-05-05"
-    },
-    {
-      "id": "tu-delft",
-      "name_en": "Delft University of Technology",
-      "name_zh": "代尔夫特理工大学",
-      "aliases": [
-        "TU Delft",
-        "代尔夫特理工"
-      ],
-      "country": "NL",
-      "qs_rank_2026": 47,
-      "program_length_months": 24,
-      "term_system": "quarter",
-      "academic_year_start": "2025-09-01",
-      "coursework_end_avg": "2026-06-26",
-      "acc_weeks": 42,
-      "tier": "T3",
-      "tier_label": "NPC",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://filelist.tudelft.nl/Studentenportal/Centraal/Mijn%20studie%20_%20ik/Onderwijs/Academische%20jaarindeling/Academic%20Calendar%202025-2026.pdf",
-          "field": "term_dates",
-          "fetched_at": "2026-05-05"
-        }
-      ],
-      "notes": "学期内 4 quarter 制（Q1-Q4），Opening Academic Year 9/1，Q4 exam 末 6/26。",
-      "last_verified": "2026-05-05"
-    },
-    {
-      "id": "bristol",
-      "name_en": "University of Bristol",
-      "name_zh": "布里斯托大学",
-      "aliases": [
-        "Bristol",
-        "UoB",
-        "布大"
-      ],
-      "country": "GB",
-      "qs_rank_2026": 51,
-      "program_length_months": 12,
-      "term_system": "semester",
-      "academic_year_start": "2025-09-22",
-      "coursework_end_avg": "2026-05-01",
-      "acc_weeks": 31,
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://www.bristol.ac.uk/students/your-studies/academic-year-dates/",
-          "field": "term_dates",
-          "fetched_at": "2026-05-01"
-        }
-      ],
-      "notes": "Two teaching block 制度。TB1（约 12 周）+ TB2（约 15 周含 consolidation/revision），TB2 末考试期 5/5–5/22。授课型 PGT 暑期用于 dissertation。",
-      "last_verified": "2026-05-01",
-      "tier": "T2",
-      "tier_label": "人上人"
-    },
-    {
-      "id": "uva",
-      "name_en": "University of Amsterdam",
-      "name_zh": "阿姆斯特丹大学",
-      "aliases": [
-        "UvA",
-        "阿姆斯特丹大学"
-      ],
-      "country": "NL",
-      "qs_rank_2026": 53,
-      "program_length_months": 24,
-      "term_system": "semester",
-      "academic_year_start": "2025-09-02",
-      "coursework_end_avg": "2026-06-27",
-      "acc_weeks": 42,
-      "tier": "T3",
-      "tier_label": "NPC",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://student.uva.nl/en/academic-calendar/2025-2026",
-          "field": "term_dates",
-          "fetched_at": "2026-05-05"
-        }
-      ],
-      "notes": "S1 9/2-1/31，S2 2/3-6/27，含 exam period。",
-      "last_verified": "2026-05-05"
-    },
-    {
-      "id": "nyu",
-      "name_en": "New York University",
-      "name_zh": "纽约大学",
-      "aliases": [
-        "NYU",
-        "纽大"
-      ],
-      "country": "US",
-      "qs_rank_2026": 55,
-      "program_length_months": 24,
-      "term_system": "semester",
-      "academic_year_start": "2025-09-02",
-      "coursework_end_avg": "2026-05-15",
-      "acc_weeks": 36,
-      "tier": "T2",
-      "tier_label": "人上人",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://www.nyu.edu/registrar/calendars/university-academic-calendar.html",
-          "field": "term_dates",
-          "fetched_at": "2026-04-15"
-        }
-      ],
-      "notes": "美式学期制，Spring Semester 5 月中结束。两年制项目第一学年视图。",
-      "last_verified": "2026-04-15"
-    },
-    {
-      "id": "lse",
-      "name_en": "London School of Economics and Political Science",
-      "name_zh": "伦敦政治经济学院",
-      "aliases": [
-        "LSE",
-        "G5",
-        "伦敦政经"
-      ],
-      "country": "GB",
-      "qs_rank_2026": 56,
-      "program_length_months": 12,
-      "term_system": "3-term",
-      "academic_year_start": "2025-09-29",
-      "coursework_end_avg": "2026-03-27",
-      "acc_weeks": 25,
-      "tier": "T1",
-      "tier_label": "顶级",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://www.lse.ac.uk/calendar/dates",
-          "field": "term_dates",
-          "fetched_at": "2026-04-15"
-        }
-      ],
-      "notes": "Lent Term 末理论课基本结束。",
-      "last_verified": "2026-04-15"
-    },
-    {
-      "id": "lmu",
-      "name_en": "Ludwig Maximilian University of Munich",
-      "name_zh": "慕尼黑大学",
-      "aliases": [
-        "LMU",
-        "LMU Munich",
-        "慕尼黑大学"
-      ],
-      "country": "DE",
-      "qs_rank_2026": 58,
-      "program_length_months": 24,
-      "term_system": "semester",
-      "academic_year_start": "2025-10-13",
-      "coursework_end_avg": "2026-07-17",
-      "acc_weeks": 39,
-      "tier": "T3",
-      "tier_label": "NPC",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://www.lmu.de/en/workspace-for-students/abc-study-guide/lecture-periods/",
-          "field": "term_dates",
-          "fetched_at": "2026-05-05"
-        }
-      ],
-      "notes": "WiSe Vorlesungszeit 13.10.2025-7.2.2026，SoSe Vorlesungszeit 13.4-17.7.2026。德国学制 Sommersemester 拉到 7 月中下旬。",
-      "last_verified": "2026-05-05"
-    },
-    {
-      "id": "kuleuven",
-      "name_en": "KU Leuven",
-      "name_zh": "鲁汶大学",
-      "aliases": [
-        "KU Leuven",
-        "Katholieke Universiteit Leuven",
-        "鲁汶大学"
-      ],
-      "country": "BE",
-      "qs_rank_2026": 60,
-      "program_length_months": 24,
-      "term_system": "semester",
-      "academic_year_start": "2025-09-22",
-      "coursework_end_avg": "2026-05-23",
-      "acc_weeks": 34,
-      "tier": "T2",
-      "tier_label": "人上人",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://www.kuleuven.be/english/about-kuleuven/calendars",
-          "field": "term_dates",
-          "fetched_at": "2026-05-05"
-        }
-      ],
-      "notes": "S1 lectures 9/22-12/20，exam 1/8-1/31；S2 lectures 2/16-5/23，exam revision 5/25 起，exam period 至 6 月下旬。结课日按 S2 lecture 末。",
-      "last_verified": "2026-05-05"
-    },
-    {
-      "id": "brown",
-      "name_en": "Brown University",
-      "name_zh": "布朗大学",
-      "aliases": [
-        "Brown",
-        "布朗"
-      ],
-      "country": "US",
-      "qs_rank_2026": 69,
-      "program_length_months": 24,
-      "term_system": "semester",
-      "academic_year_start": "2025-09-03",
-      "coursework_end_avg": "2026-05-05",
-      "acc_weeks": 34,
-      "tier": "T2",
-      "tier_label": "人上人",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://registrar.brown.edu/academic-calendar/2025-2026-academic-calendar",
-          "field": "term_dates",
-          "fetched_at": "2026-05-01"
-        }
-      ],
-      "notes": "Semester 制。Fall 教学 9/3 起，Spring 教学 1/21–5/5，Reading Period 至 5/5 + Final Exam 5/6–5/15。",
-      "last_verified": "2026-05-01"
-    },
-    {
-      "id": "paris-saclay",
-      "name_en": "Université Paris-Saclay",
-      "name_zh": "巴黎-萨克雷大学",
-      "aliases": [
-        "Paris-Saclay",
-        "巴黎-萨克雷"
-      ],
-      "country": "FR",
-      "qs_rank_2026": 70,
-      "program_length_months": 24,
-      "term_system": "semester",
-      "academic_year_start": "2025-09-08",
-      "coursework_end_avg": "2026-05-29",
-      "acc_weeks": 37,
-      "tier": "T2",
-      "tier_label": "人上人",
-      "confidence": "low",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://www.universite-paris-saclay.fr/sites/default/files/2025-11/academic_regulations_for_master_degree_2025_2026_version_du_15_09_2025_0.pdf",
-          "field": "term_dates",
-          "fetched_at": "2026-05-05"
-        }
-      ],
-      "notes": "联盟型大学，各 component 学校（CentraleSupélec、ENS Paris-Saclay、AgroParisTech 等）校历略异；估算 S1 Sept-Jan，S2 Jan-May，resit 6-7 月。confidence=low。",
-      "last_verified": "2026-05-05"
-    },
-    {
-      "id": "lund",
-      "name_en": "Lund University",
-      "name_zh": "隆德大学",
-      "aliases": [
-        "Lund",
-        "隆德大学"
-      ],
-      "country": "SE",
-      "qs_rank_2026": 72,
-      "program_length_months": 24,
-      "term_system": "semester",
-      "academic_year_start": "2025-09-01",
-      "coursework_end_avg": "2026-06-07",
-      "acc_weeks": 39,
-      "tier": "T3",
-      "tier_label": "NPC",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://www.lunduniversity.lu.se/study/your-academic-experience/academic-calendar",
-          "field": "term_dates",
-          "fetched_at": "2026-05-05"
-        }
-      ],
-      "notes": "Autumn 9/1-1/18，Spring 1/19-6/7。各 faculty 略有差异。",
-      "last_verified": "2026-05-05"
-    },
-    {
-      "id": "sorbonne",
-      "name_en": "Sorbonne Université",
-      "name_zh": "索邦大学",
-      "aliases": [
-        "Sorbonne",
-        "Sorbonne U",
-        "索邦大学"
-      ],
-      "country": "FR",
-      "qs_rank_2026": 72,
-      "program_length_months": 24,
-      "term_system": "semester",
-      "academic_year_start": "2025-09-08",
-      "coursework_end_avg": "2026-05-29",
-      "acc_weeks": 37,
-      "tier": "T2",
-      "tier_label": "人上人",
-      "confidence": "low",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://sciences.sorbonne-universite.fr/en/formation-sciences/organiser-sa-scolarite-0/university-calendar",
-          "field": "term_dates",
-          "fetched_at": "2026-05-05"
-        }
-      ],
-      "notes": "以 Faculty of Sciences and Engineering 主流 Master 模式估算：S1 Sept-Jan，S2 Jan-May，exam 5-6 月。confidence=low。",
-      "last_verified": "2026-05-05"
-    },
-    {
-      "id": "warwick",
-      "name_en": "The University of Warwick",
-      "name_zh": "华威大学",
-      "aliases": [
-        "Warwick",
-        "华威"
-      ],
-      "country": "GB",
-      "qs_rank_2026": 74,
-      "program_length_months": 12,
-      "term_system": "3-term",
-      "academic_year_start": "2025-10-06",
-      "coursework_end_avg": "2026-03-21",
-      "acc_weeks": 23,
-      "tier": "T1",
-      "tier_label": "顶级",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://warwick.ac.uk/study/termdates/",
-          "field": "term_dates",
-          "fetched_at": "2026-05-01"
-        }
-      ],
-      "notes": "3-term 制（Autumn / Spring / Summer，每 term 10 周）。授课主要集中在 Autumn + Spring，Summer Term 用于考试与 dissertation（少数学科 Summer Term 仍有授课）。结课日按 Spring Term 末计，与 Imperial / UCL 口径一致。",
-      "last_verified": "2026-05-01"
-    },
-    {
-      "id": "birmingham",
-      "name_en": "University of Birmingham",
-      "name_zh": "伯明翰大学",
-      "aliases": [
-        "UoB",
-        "Birmingham",
-        "伯大"
-      ],
-      "country": "GB",
-      "qs_rank_2026": 76,
-      "program_length_months": 12,
-      "term_system": "semester",
-      "academic_year_start": "2025-09-29",
-      "coursework_end_avg": "2026-05-01",
-      "acc_weeks": 30,
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://www.birmingham.ac.uk/undergraduate/courses/academicyear",
-          "field": "term_dates",
-          "fetched_at": "2026-05-01"
-        }
-      ],
-      "notes": "Semester 制。Semester 1 教学 9/29–12/14，Semester 2 教学 1/19–3/29 + 4/27–5/3。理论课结束于 5 月初。",
-      "last_verified": "2026-05-01",
-      "tier": "T2",
-      "tier_label": "人上人"
-    },
-    {
-      "id": "kth",
-      "name_en": "KTH Royal Institute of Technology",
-      "name_zh": "瑞典皇家理工学院",
-      "aliases": [
-        "KTH",
-        "瑞典皇家理工"
-      ],
-      "country": "SE",
-      "qs_rank_2026": 78,
-      "program_length_months": 24,
-      "term_system": "study_period",
-      "academic_year_start": "2025-08-25",
-      "coursework_end_avg": "2026-05-19",
-      "acc_weeks": 38,
-      "tier": "T2",
-      "tier_label": "人上人",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://intra.kth.se/en/utbildning/schema-och-lokalbokning/lasarsindelning/lasaret-2025-2026-1.1304375",
-          "field": "term_dates",
-          "fetched_at": "2026-05-05"
-        }
-      ],
-      "notes": "学期内 4 study periods（P1-P4）。Spring P4 teaching 末 5/19/2026，exam period 4 5/25-6/1。秋季 P1 教学 8/25 起。",
-      "last_verified": "2026-05-05"
-    },
-    {
-      "id": "glasgow",
-      "name_en": "University of Glasgow",
-      "name_zh": "格拉斯哥大学",
-      "aliases": [
-        "UoG",
-        "Glasgow",
-        "格大"
-      ],
-      "country": "GB",
-      "qs_rank_2026": 79,
-      "program_length_months": 12,
-      "term_system": "semester",
-      "academic_year_start": "2025-09-22",
-      "coursework_end_avg": "2026-03-27",
-      "acc_weeks": 26,
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://www.gla.ac.uk/myglasgow/apg/sessiondates/session2025-26/",
-          "field": "term_dates",
-          "fetched_at": "2026-05-01"
-        }
-      ],
-      "notes": "Semester 制（苏格兰）。Semester 1 教学 9/22–12/5，Semester 2 教学 1/12–3/27，结课日按 Semester 2 教学结束计。",
-      "last_verified": "2026-05-01",
-      "tier": "T1",
-      "tier_label": "顶级"
-    },
-    {
-      "id": "heidelberg",
-      "name_en": "Heidelberg University",
-      "name_zh": "海德堡大学",
-      "aliases": [
-        "Uni Heidelberg",
-        "Ruprecht-Karls-Universität Heidelberg",
-        "海德堡大学"
-      ],
-      "country": "DE",
-      "qs_rank_2026": 80,
-      "program_length_months": 24,
-      "term_system": "semester",
-      "academic_year_start": "2025-10-13",
-      "coursework_end_avg": "2026-07-25",
-      "acc_weeks": 40,
-      "tier": "T3",
-      "tier_label": "NPC",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://www.uni-heidelberg.de/en/study/management-of-studies/key-dates-deadlines",
-          "field": "term_dates",
-          "fetched_at": "2026-05-05"
-        }
-      ],
-      "notes": "WiSe Vorlesungszeit 13.10.2025-6.2.2026，SoSe Vorlesungszeit 13.4-25.7.2026。Baden-Württemberg 学制。",
-      "last_verified": "2026-05-05"
-    },
-    {
-      "id": "leeds",
-      "name_en": "University of Leeds",
-      "name_zh": "利兹大学",
-      "aliases": [
-        "Leeds",
-        "UoL",
-        "利大"
-      ],
-      "country": "GB",
-      "qs_rank_2026": 86,
-      "program_length_months": 12,
-      "term_system": "semester",
-      "academic_year_start": "2025-09-29",
-      "coursework_end_avg": "2026-05-08",
-      "acc_weeks": 31,
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://www.leeds.ac.uk/term-dates",
-          "field": "term_dates",
-          "fetched_at": "2026-05-01"
-        }
-      ],
-      "notes": "Semester 制。Autumn 教学 9/29–12/12，Spring 教学 1/26–5/8。",
-      "last_verified": "2026-05-01",
-      "tier": "T2",
-      "tier_label": "人上人"
-    },
-    {
-      "id": "southampton",
-      "name_en": "University of Southampton",
-      "name_zh": "南安普顿大学",
-      "aliases": [
-        "Soton",
-        "Southampton",
-        "南安"
-      ],
-      "country": "GB",
-      "qs_rank_2026": 87,
-      "program_length_months": 12,
-      "term_system": "semester",
-      "academic_year_start": "2025-09-29",
-      "coursework_end_avg": "2026-03-21",
-      "acc_weeks": 24,
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://www.southampton.ac.uk/about/term-dates",
-          "field": "term_dates",
-          "fetched_at": "2026-05-01"
-        }
-      ],
-      "notes": "三学期制实质走 semester。Autumn term 9/29–12/13，Spring term 1/5–3/21。Summer term 主要为考试与 dissertation。",
-      "last_verified": "2026-05-01",
-      "tier": "T1",
-      "tier_label": "顶级"
-    },
-    {
-      "id": "fu-berlin",
-      "name_en": "Freie Universität Berlin",
-      "name_zh": "柏林自由大学",
-      "aliases": [
-        "FU Berlin",
-        "Free University of Berlin",
-        "柏林自由"
-      ],
-      "country": "DE",
-      "qs_rank_2026": 88,
-      "program_length_months": 24,
-      "term_system": "semester",
-      "academic_year_start": "2025-10-13",
-      "coursework_end_avg": "2026-07-18",
-      "acc_weeks": 39,
-      "tier": "T3",
-      "tier_label": "NPC",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://www.fu-berlin.de/en/studium/beratung/kalender",
-          "field": "term_dates",
-          "fetched_at": "2026-05-05"
-        }
-      ],
-      "notes": "WiSe Vorlesungszeit 13.10.2025-14.2.2026，SoSe Vorlesungszeit 13.4-18.7.2026。Prüfungen 通常在 Vorlesungszeit 末周或 vorlesungsfreie Zeit 首周。",
-      "last_verified": "2026-05-05"
-    },
-    {
-      "id": "sheffield",
-      "name_en": "The University of Sheffield",
-      "name_zh": "谢菲尔德大学",
-      "aliases": [
-        "Sheffield",
-        "TUOS",
-        "谢大"
-      ],
-      "country": "GB",
-      "qs_rank_2026": 92,
-      "program_length_months": 12,
-      "term_system": "semester",
-      "academic_year_start": "2025-09-29",
-      "coursework_end_avg": "2026-05-15",
-      "acc_weeks": 32,
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://sheffield.ac.uk/about/dates/current-and-future-semester",
-          "field": "term_dates",
-          "fetched_at": "2026-05-01"
-        }
-      ],
-      "notes": "Semester 制。Autumn 教学 9/29–12/20，Spring 教学分两段 2/9–3/28 + 4/20–5/15。理论课延伸至 5 月中。",
-      "last_verified": "2026-05-01",
-      "tier": "T2",
-      "tier_label": "人上人"
-    },
-    {
-      "id": "uppsala",
-      "name_en": "Uppsala University",
-      "name_zh": "乌普萨拉大学",
-      "aliases": [
-        "Uppsala",
-        "乌普萨拉大学"
-      ],
-      "country": "SE",
-      "qs_rank_2026": 93,
-      "program_length_months": 24,
-      "term_system": "semester",
-      "academic_year_start": "2025-09-01",
-      "coursework_end_avg": "2026-06-07",
-      "acc_weeks": 39,
-      "tier": "T3",
-      "tier_label": "NPC",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://www.uu.se/en/staff/gateway/teaching/the-academic-year",
-          "field": "term_dates",
-          "fetched_at": "2026-05-05"
-        }
-      ],
-      "notes": "Autumn 9/1-1/18，Spring 1/19-6/7。瑞典学制。",
-      "last_verified": "2026-05-05"
-    },
-    {
-      "id": "nottingham",
-      "name_en": "The University of Nottingham",
-      "name_zh": "诺丁汉大学",
-      "aliases": [
-        "UoN",
-        "Nottingham",
-        "诺大"
-      ],
-      "country": "GB",
-      "qs_rank_2026": 97,
-      "program_length_months": 12,
-      "term_system": "semester",
-      "academic_year_start": "2025-09-29",
-      "coursework_end_avg": "2026-05-15",
-      "acc_weeks": 32,
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://www.nottingham.ac.uk/about/keydates/",
-          "field": "term_dates",
-          "fetched_at": "2026-05-01"
-        }
-      ],
-      "notes": "Semester 制（叠加 3-term 用于行政）。Autumn semester 9/22–1/23，Spring semester 1/26–6/19。理论课结束于 5 月中。",
-      "last_verified": "2026-05-01",
-      "tier": "T2",
-      "tier_label": "人上人"
-    },
-    {
-      "id": "kit",
-      "name_en": "Karlsruhe Institute of Technology",
-      "name_zh": "卡尔斯鲁厄理工学院",
-      "aliases": [
-        "KIT",
-        "卡尔斯鲁厄理工"
-      ],
-      "country": "DE",
-      "qs_rank_2026": 98,
-      "program_length_months": 24,
-      "term_system": "semester",
-      "academic_year_start": "2025-10-13",
-      "coursework_end_avg": "2026-07-17",
-      "acc_weeks": 39,
-      "tier": "T3",
-      "tier_label": "NPC",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://www.sle.kit.edu/english/imstudium/697.php",
-          "field": "term_dates",
-          "fetched_at": "2026-05-05"
-        }
-      ],
-      "notes": "WiSe Vorlesungszeit 13.10.2025-13.2.2026，SoSe Vorlesungszeit 13.4-17.7.2026。Pfingstwoche vorlesungsfrei。",
-      "last_verified": "2026-05-05"
-    },
-    {
-      "id": "polimi",
-      "name_en": "Politecnico di Milano",
-      "name_zh": "米兰理工大学",
-      "aliases": [
-        "PoliMi",
-        "Politecnico Milano",
-        "米兰理工"
-      ],
-      "country": "IT",
-      "qs_rank_2026": 98,
-      "program_length_months": 24,
-      "term_system": "semester",
-      "academic_year_start": "2025-09-15",
-      "coursework_end_avg": "2026-06-12",
-      "acc_weeks": 38,
-      "tier": "T3",
-      "tier_label": "NPC",
-      "confidence": "low",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://www.polimi.it/en/students/calendar-and-deadlines",
-          "field": "term_dates",
-          "fetched_at": "2026-05-05"
-        }
-      ],
-      "notes": "S1 lectures 9/15-12/19（估算），S2 lectures 2/23-6/12（估算），exam sessions 1-2 月、6-7 月、9 月。Master 课表精确日期因 School 异，confidence=low。",
-      "last_verified": "2026-05-05"
-    },
-    {
-      "id": "uzh",
-      "name_en": "University of Zurich",
-      "name_zh": "苏黎世大学",
-      "aliases": [
-        "UZH",
-        "Universität Zürich",
-        "苏黎世大学"
-      ],
-      "country": "CH",
-      "qs_rank_2026": 100,
-      "program_length_months": 24,
-      "term_system": "semester",
-      "academic_year_start": "2025-09-15",
-      "coursework_end_avg": "2026-05-30",
-      "acc_weeks": 36,
-      "tier": "T2",
-      "tier_label": "人上人",
-      "confidence": "medium",
-      "data_sources": [
-        {
-          "type": "official",
-          "url": "https://www.uzh.ch/en/studies/dates/dates.html",
-          "field": "term_dates",
-          "fetched_at": "2026-05-05"
-        }
-      ],
-      "notes": "Fall lecture period 9/15-12/20，Spring lecture period 2/16-5/30。结课日按 lecture period 末计。",
-      "last_verified": "2026-05-05"
-    }
-  ]
-}
+[
+  {
+    "id": "nus",
+    "name_en": "National University of Singapore",
+    "name_zh": "新加坡国立大学",
+    "aliases": [
+      "NUS",
+      "新国大",
+      "国大"
+    ],
+    "country": "SG",
+    "qs_rank_2026": 8,
+    "program_length_months": 24,
+    "term_system": "semester",
+    "academic_year_start": "2025-08-11",
+    "coursework_end_avg": "2026-04-17",
+    "acc_weeks": 35,
+    "tier": "T1",
+    "tier_label": "顶级",
+    "confidence": "medium",
+    "data_sources": [
+      {
+        "type": "official",
+        "url": "https://nus.edu.sg/registrar/calendar",
+        "field": "term_dates",
+        "fetched_at": "2026-05-05"
+      },
+      {
+        "type": "official",
+        "url": "https://nus.edu.sg/registrar/docs/info/calendar/ay2025-2026.pdf",
+        "field": "term_dates",
+        "fetched_at": "2026-05-05"
+      }
+    ],
+    "notes": "采用 AY2025/26 Semester 2 instructional period 末（4/17/2026）；之后为 reading week + exams 至 5/9。Master 项目通常 2 年制。",
+    "last_verified": "2026-05-05"
+  },
+  {
+    "id": "ntu",
+    "name_en": "Nanyang Technological University",
+    "name_zh": "南洋理工大学",
+    "aliases": [
+      "NTU",
+      "南大",
+      "南洋理工"
+    ],
+    "country": "SG",
+    "qs_rank_2026": 12,
+    "program_length_months": 24,
+    "term_system": "semester",
+    "academic_year_start": "2025-08-11",
+    "coursework_end_avg": "2026-04-17",
+    "acc_weeks": 35,
+    "tier": "T1",
+    "tier_label": "顶级",
+    "confidence": "medium",
+    "data_sources": [
+      {
+        "type": "official",
+        "url": "https://www.ntu.edu.sg/",
+        "field": "term_dates",
+        "fetched_at": "2026-05-05"
+      }
+    ],
+    "notes": "AY2025/26 Semester 2 instructional period 末与 NUS 大体同步；exam 至 5 月初。Master 项目通常 2 年制。",
+    "last_verified": "2026-05-05"
+  },
+  {
+    "id": "melbourne",
+    "name_en": "The University of Melbourne",
+    "name_zh": "墨尔本大学",
+    "aliases": [
+      "Melbourne",
+      "墨大",
+      "UMelb"
+    ],
+    "country": "AU",
+    "qs_rank_2026": 19,
+    "program_length_months": 24,
+    "term_system": "semester",
+    "academic_year_start": "2026-03-02",
+    "coursework_end_avg": "2026-10-23",
+    "acc_weeks": 33,
+    "tier": "T3",
+    "tier_label": "NPC",
+    "confidence": "medium",
+    "data_sources": [
+      {
+        "type": "official",
+        "url": "https://www.unimelb.edu.au/dates",
+        "field": "term_dates",
+        "fetched_at": "2026-05-05"
+      },
+      {
+        "type": "official",
+        "url": "https://universitiesaustralia.edu.au/wp-content/uploads/2025/11/Academic-calendar-2026-27.pdf",
+        "field": "term_dates",
+        "fetched_at": "2026-05-05"
+      }
+    ],
+    "notes": "南半球学制：2026 学年 S1 (Mar-May) + S2 (Jul-Oct)，结课在 10 月底，依月份规则落 T3（不代表'拖延'，是澳洲常态）。",
+    "last_verified": "2026-05-05"
+  },
+  {
+    "id": "unsw",
+    "name_en": "The University of New South Wales",
+    "name_zh": "新南威尔士大学",
+    "aliases": [
+      "UNSW",
+      "新南威",
+      "新南威尔士"
+    ],
+    "country": "AU",
+    "qs_rank_2026": 20,
+    "program_length_months": 24,
+    "term_system": "trimester",
+    "academic_year_start": "2026-02-16",
+    "coursework_end_avg": "2026-11-28",
+    "acc_weeks": 40,
+    "tier": "T3",
+    "tier_label": "NPC",
+    "confidence": "low",
+    "data_sources": [
+      {
+        "type": "official",
+        "url": "https://www.unsw.edu.au/",
+        "field": "term_dates",
+        "fetched_at": "2026-05-05"
+      },
+      {
+        "type": "official",
+        "url": "https://universitiesaustralia.edu.au/wp-content/uploads/2025/11/Academic-calendar-2026-27.pdf",
+        "field": "term_dates",
+        "fetched_at": "2026-05-05"
+      }
+    ],
+    "notes": "南半球学制 + 三学期制（T1/T2/T3 各 10 周）。Term 3 末 11 月底，依月份规则落 T3。具体 2026 日期为基于历史模式估算。",
+    "last_verified": "2026-05-05"
+  },
+  {
+    "id": "sydney",
+    "name_en": "The University of Sydney",
+    "name_zh": "悉尼大学",
+    "aliases": [
+      "USyd",
+      "悉大",
+      "Sydney"
+    ],
+    "country": "AU",
+    "qs_rank_2026": 25,
+    "program_length_months": 24,
+    "term_system": "semester",
+    "academic_year_start": "2026-02-23",
+    "coursework_end_avg": "2026-10-30",
+    "acc_weeks": 35,
+    "tier": "T3",
+    "tier_label": "NPC",
+    "confidence": "low",
+    "data_sources": [
+      {
+        "type": "official",
+        "url": "https://www.sydney.edu.au/",
+        "field": "term_dates",
+        "fetched_at": "2026-05-05"
+      },
+      {
+        "type": "official",
+        "url": "https://universitiesaustralia.edu.au/wp-content/uploads/2025/11/Academic-calendar-2026-27.pdf",
+        "field": "term_dates",
+        "fetched_at": "2026-05-05"
+      }
+    ],
+    "notes": "南半球学制；S2 末估算为 STUVAC 前一周（Nov 4-8 STUVAC 期）。具体 2026 日期为基于历史模式估算。",
+    "last_verified": "2026-05-05"
+  },
+  {
+    "id": "anu",
+    "name_en": "The Australian National University",
+    "name_zh": "澳大利亚国立大学",
+    "aliases": [
+      "ANU",
+      "澳国立"
+    ],
+    "country": "AU",
+    "qs_rank_2026": 32,
+    "program_length_months": 24,
+    "term_system": "semester",
+    "academic_year_start": "2026-02-16",
+    "coursework_end_avg": "2026-10-23",
+    "acc_weeks": 35,
+    "tier": "T3",
+    "tier_label": "NPC",
+    "confidence": "low",
+    "data_sources": [
+      {
+        "type": "official",
+        "url": "https://www.anu.edu.au/",
+        "field": "term_dates",
+        "fetched_at": "2026-05-05"
+      },
+      {
+        "type": "official",
+        "url": "https://universitiesaustralia.edu.au/wp-content/uploads/2025/11/Academic-calendar-2026-27.pdf",
+        "field": "term_dates",
+        "fetched_at": "2026-05-05"
+      }
+    ],
+    "notes": "南半球学制；2026 日期参照 2025 模式（S1 Feb-May，S2 Jul-Oct）。",
+    "last_verified": "2026-05-05"
+  },
+  {
+    "id": "monash",
+    "name_en": "Monash University",
+    "name_zh": "莫纳什大学",
+    "aliases": [
+      "Monash",
+      "蒙纳士"
+    ],
+    "country": "AU",
+    "qs_rank_2026": 36,
+    "program_length_months": 24,
+    "term_system": "semester",
+    "academic_year_start": "2026-03-02",
+    "coursework_end_avg": "2026-10-30",
+    "acc_weeks": 34,
+    "tier": "T3",
+    "tier_label": "NPC",
+    "confidence": "medium",
+    "data_sources": [
+      {
+        "type": "official",
+        "url": "https://www.monash.edu/",
+        "field": "term_dates",
+        "fetched_at": "2026-05-05"
+      },
+      {
+        "type": "official",
+        "url": "https://universitiesaustralia.edu.au/wp-content/uploads/2025/11/Academic-calendar-2026-27.pdf",
+        "field": "term_dates",
+        "fetched_at": "2026-05-05"
+      }
+    ],
+    "notes": "南半球学制；S2 末教学周末估算约 10/30，exam 在 11 月。",
+    "last_verified": "2026-05-05"
+  },
+  {
+    "id": "uq",
+    "name_en": "The University of Queensland",
+    "name_zh": "昆士兰大学",
+    "aliases": [
+      "UQ"
+    ],
+    "country": "AU",
+    "qs_rank_2026": 42,
+    "program_length_months": 24,
+    "term_system": "semester",
+    "academic_year_start": "2026-02-23",
+    "coursework_end_avg": "2026-10-31",
+    "acc_weeks": 35,
+    "tier": "T3",
+    "tier_label": "NPC",
+    "confidence": "medium",
+    "data_sources": [
+      {
+        "type": "official",
+        "url": "https://www.uq.edu.au/",
+        "field": "term_dates",
+        "fetched_at": "2026-05-05"
+      },
+      {
+        "type": "official",
+        "url": "https://universitiesaustralia.edu.au/wp-content/uploads/2025/11/Academic-calendar-2026-27.pdf",
+        "field": "term_dates",
+        "fetched_at": "2026-05-05"
+      }
+    ],
+    "notes": "南半球学制；S2 last teaching day 31 Oct 2026（Universities Australia PDF）。",
+    "last_verified": "2026-05-05"
+  },
+  {
+    "id": "uwa",
+    "name_en": "The University of Western Australia",
+    "name_zh": "西澳大学",
+    "aliases": [
+      "UWA"
+    ],
+    "country": "AU",
+    "qs_rank_2026": 77,
+    "program_length_months": 24,
+    "term_system": "semester",
+    "academic_year_start": "2026-02-23",
+    "coursework_end_avg": "2026-10-16",
+    "acc_weeks": 33,
+    "tier": "T3",
+    "tier_label": "NPC",
+    "confidence": "medium",
+    "data_sources": [
+      {
+        "type": "official",
+        "url": "https://www.uwa.edu.au/",
+        "field": "term_dates",
+        "fetched_at": "2026-05-05"
+      },
+      {
+        "type": "official",
+        "url": "https://universitiesaustralia.edu.au/wp-content/uploads/2025/11/Academic-calendar-2026-27.pdf",
+        "field": "term_dates",
+        "fetched_at": "2026-05-05"
+      }
+    ],
+    "notes": "南半球学制；S2 last teaching 16 Oct 2026，exam 26 Oct - 6 Nov。学期结束最早的澳洲校之一。",
+    "last_verified": "2026-05-05"
+  },
+  {
+    "id": "adelaide",
+    "name_en": "Adelaide University",
+    "name_zh": "阿德莱德大学",
+    "aliases": [
+      "Adelaide",
+      "阿德莱德"
+    ],
+    "country": "AU",
+    "qs_rank_2026": 82,
+    "program_length_months": 24,
+    "term_system": "trimester",
+    "academic_year_start": "2026-01-29",
+    "coursework_end_avg": "2026-11-22",
+    "acc_weeks": 42,
+    "tier": "T3",
+    "tier_label": "NPC",
+    "confidence": "medium",
+    "data_sources": [
+      {
+        "type": "official",
+        "url": "https://www.adelaide.edu.au/",
+        "field": "term_dates",
+        "fetched_at": "2026-05-05"
+      },
+      {
+        "type": "official",
+        "url": "https://universitiesaustralia.edu.au/wp-content/uploads/2025/11/Academic-calendar-2026-27.pdf",
+        "field": "term_dates",
+        "fetched_at": "2026-05-05"
+      }
+    ],
+    "notes": "2026 起 University of Adelaide 与 UniSA 合并为 Adelaide University，采三学期制：T1 Jan-Apr、T2 May-Aug、T3 Sep-Nov。学年最长。",
+    "last_verified": "2026-05-05"
+  },
+  {
+    "id": "uts",
+    "name_en": "University of Technology Sydney",
+    "name_zh": "悉尼科技大学",
+    "aliases": [
+      "UTS"
+    ],
+    "country": "AU",
+    "qs_rank_2026": 96,
+    "program_length_months": 24,
+    "term_system": "semester",
+    "academic_year_start": "2026-02-16",
+    "coursework_end_avg": "2026-10-23",
+    "acc_weeks": 35,
+    "tier": "T3",
+    "tier_label": "NPC",
+    "confidence": "medium",
+    "data_sources": [
+      {
+        "type": "official",
+        "url": "https://www.uts.edu.au/",
+        "field": "term_dates",
+        "fetched_at": "2026-05-05"
+      },
+      {
+        "type": "official",
+        "url": "https://universitiesaustralia.edu.au/wp-content/uploads/2025/11/Academic-calendar-2026-27.pdf",
+        "field": "term_dates",
+        "fetched_at": "2026-05-05"
+      }
+    ],
+    "notes": "南半球学制；S2 last teaching 23 Oct 2026（Universities Australia PDF）。注：UTS 实际有 8 套日历，此处为 main teaching calendar。",
+    "last_verified": "2026-05-05"
+  },
+  {
+    "id": "mcgill",
+    "name_en": "McGill University",
+    "name_zh": "麦吉尔大学",
+    "aliases": [
+      "McGill",
+      "麦大"
+    ],
+    "country": "CA",
+    "qs_rank_2026": 27,
+    "program_length_months": 24,
+    "term_system": "semester",
+    "academic_year_start": "2025-08-27",
+    "coursework_end_avg": "2026-04-14",
+    "acc_weeks": 32,
+    "tier": "T1",
+    "tier_label": "顶级",
+    "confidence": "medium",
+    "data_sources": [
+      {
+        "type": "official",
+        "url": "https://www.mcgill.ca/importantdates/key-dates/past-dates/key-dates-2025-26",
+        "field": "term_dates",
+        "fetched_at": "2026-05-05"
+      }
+    ],
+    "notes": "Fall + Winter 双学期；Winter classes end 4/14/2026，exam Apr 16-30。标准加拿大学制。",
+    "last_verified": "2026-05-05"
+  },
+  {
+    "id": "utoronto",
+    "name_en": "University of Toronto",
+    "name_zh": "多伦多大学",
+    "aliases": [
+      "UofT",
+      "Toronto",
+      "多大"
+    ],
+    "country": "CA",
+    "qs_rank_2026": 29,
+    "program_length_months": 24,
+    "term_system": "semester",
+    "academic_year_start": "2025-09-02",
+    "coursework_end_avg": "2026-04-06",
+    "acc_weeks": 30,
+    "tier": "T1",
+    "tier_label": "顶级",
+    "confidence": "medium",
+    "data_sources": [
+      {
+        "type": "official",
+        "url": "https://artsci.calendar.utoronto.ca/",
+        "field": "term_dates",
+        "fetched_at": "2026-05-05"
+      }
+    ],
+    "notes": "Fall + Winter；Winter 最后教学日 4/2/2026，因 4/3 Good Friday 调休至 4/6 收尾，exam Apr 9-29。",
+    "last_verified": "2026-05-05"
+  },
+  {
+    "id": "ubc",
+    "name_en": "University of British Columbia",
+    "name_zh": "不列颠哥伦比亚大学",
+    "aliases": [
+      "UBC",
+      "卑诗大学"
+    ],
+    "country": "CA",
+    "qs_rank_2026": 40,
+    "program_length_months": 24,
+    "term_system": "semester",
+    "academic_year_start": "2025-09-02",
+    "coursework_end_avg": "2026-04-08",
+    "acc_weeks": 31,
+    "tier": "T1",
+    "tier_label": "顶级",
+    "confidence": "medium",
+    "data_sources": [
+      {
+        "type": "official",
+        "url": "https://senate.ubc.ca/vancouver/termdates/",
+        "field": "term_dates",
+        "fetched_at": "2026-05-05"
+      }
+    ],
+    "notes": "Winter Session = Term 1 (Sept-Dec) + Term 2 (Jan-Apr)；Term 2 教学末 ~4/8/2026，exam 4/14-29。",
+    "last_verified": "2026-05-05"
+  },
+  {
+    "id": "ualberta",
+    "name_en": "University of Alberta",
+    "name_zh": "阿尔伯塔大学",
+    "aliases": [
+      "UAlberta",
+      "阿大"
+    ],
+    "country": "CA",
+    "qs_rank_2026": 94,
+    "program_length_months": 24,
+    "term_system": "semester",
+    "academic_year_start": "2025-09-02",
+    "coursework_end_avg": "2026-04-14",
+    "acc_weeks": 32,
+    "tier": "T1",
+    "tier_label": "顶级",
+    "confidence": "medium",
+    "data_sources": [
+      {
+        "type": "official",
+        "url": "https://calendar.ualberta.ca/",
+        "field": "term_dates",
+        "fetched_at": "2026-05-05"
+      },
+      {
+        "type": "official",
+        "url": "https://www.ualberta.ca/en/registrar/media-library/calendar/proposed-academic-schedule-for-2025-2026-final-draft.pdf",
+        "field": "term_dates",
+        "fetched_at": "2026-05-05"
+      }
+    ],
+    "notes": "Fall + Winter；Winter classes end 早 4 月（基于加拿大典型模式估算 ~4/14）。",
+    "last_verified": "2026-05-05"
+  },
+  {
+    "id": "auckland",
+    "name_en": "The University of Auckland",
+    "name_zh": "奥克兰大学",
+    "aliases": [
+      "UoA",
+      "Auckland"
+    ],
+    "country": "NZ",
+    "qs_rank_2026": 65,
+    "program_length_months": 24,
+    "term_system": "semester",
+    "academic_year_start": "2026-03-02",
+    "coursework_end_avg": "2026-10-23",
+    "acc_weeks": 33,
+    "tier": "T3",
+    "tier_label": "NPC",
+    "confidence": "medium",
+    "data_sources": [
+      {
+        "type": "official",
+        "url": "https://www.auckland.ac.nz/assets/about-us/about-the-university/the-university/official-publications/university-calendar/current-calendar/2026-calendar-parts/2026-calendar-key-dates.pdf",
+        "field": "term_dates",
+        "fetched_at": "2026-05-05"
+      }
+    ],
+    "notes": "南半球学制：S1 Mar 2 - Jun 5 (lectures end), S2 Jul 20 - Oct 23 (lectures end)。新西兰唯一 top 100 校。",
+    "last_verified": "2026-05-05"
+  },
+  {
+    "id": "cuhk",
+    "name_en": "The Chinese University of Hong Kong",
+    "name_zh": "香港中文大学",
+    "aliases": [
+      "CUHK",
+      "中大",
+      "港中大"
+    ],
+    "country": "HK",
+    "qs_rank_2026": 32,
+    "program_length_months": 24,
+    "term_system": "semester",
+    "academic_year_start": "2025-09-01",
+    "coursework_end_avg": "2026-04-18",
+    "acc_weeks": 32,
+    "tier": "T1",
+    "tier_label": "顶级",
+    "confidence": "medium",
+    "data_sources": [
+      {
+        "type": "official",
+        "url": "https://www.res.cuhk.edu.hk/wp-content/uploads/general-information/Calendar-for-Academic-Year-2025-26_Eng_20250612.pdf",
+        "field": "term_dates",
+        "fetched_at": "2026-05-05"
+      }
+    ],
+    "notes": "1st term 9/1-11/29/2025，2nd term Last Teaching Day 4/18/2026。多数 Master 为 2 年制；部分 1-年制 MSc 项目可能更早结课。",
+    "last_verified": "2026-05-05"
+  },
+  {
+    "id": "hkust",
+    "name_en": "The Hong Kong University of Science and Technology",
+    "name_zh": "香港科技大学",
+    "aliases": [
+      "HKUST",
+      "港科大",
+      "科大"
+    ],
+    "country": "HK",
+    "qs_rank_2026": 44,
+    "program_length_months": 24,
+    "term_system": "semester",
+    "academic_year_start": "2025-09-01",
+    "coursework_end_avg": "2026-05-09",
+    "acc_weeks": 35,
+    "tier": "T2",
+    "tier_label": "人上人",
+    "confidence": "medium",
+    "data_sources": [
+      {
+        "type": "official",
+        "url": "https://registry.hkust.edu.hk/calendar_dates/dates25-26confirmed.pdf",
+        "field": "term_dates",
+        "fetched_at": "2026-05-05"
+      }
+    ],
+    "notes": "Fall 9/1-12/19/2025；Spring Term last day of classes 5/9/2026 → 比其他 HK 校晚约 3 周。多数 Master 为 2 年制。",
+    "last_verified": "2026-05-05"
+  },
+  {
+    "id": "polyu",
+    "name_en": "The Hong Kong Polytechnic University",
+    "name_zh": "香港理工大学",
+    "aliases": [
+      "PolyU",
+      "理大",
+      "港理工"
+    ],
+    "country": "HK",
+    "qs_rank_2026": 54,
+    "program_length_months": 24,
+    "term_system": "semester",
+    "academic_year_start": "2025-09-01",
+    "coursework_end_avg": "2026-04-18",
+    "acc_weeks": 32,
+    "tier": "T1",
+    "tier_label": "顶级",
+    "confidence": "medium",
+    "data_sources": [
+      {
+        "type": "official",
+        "url": "https://www.polyu.edu.hk/ar/docdrive/polyu-students/AC.pdf",
+        "field": "term_dates",
+        "fetched_at": "2026-05-05"
+      }
+    ],
+    "notes": "Sem 1: 9/1-11/29/2025（13 周）；Sem 2: ~1/12-4/18/2026 教学，exam 4/23-5/9。多数 Master 为 2 年制。",
+    "last_verified": "2026-05-05"
+  },
+  {
+    "id": "cityu",
+    "name_en": "City University of Hong Kong",
+    "name_zh": "香港城市大学",
+    "aliases": [
+      "CityU",
+      "城大",
+      "港城大"
+    ],
+    "country": "HK",
+    "qs_rank_2026": 63,
+    "program_length_months": 24,
+    "term_system": "semester",
+    "academic_year_start": "2025-09-01",
+    "coursework_end_avg": "2026-04-18",
+    "acc_weeks": 32,
+    "tier": "T1",
+    "tier_label": "顶级",
+    "confidence": "medium",
+    "data_sources": [
+      {
+        "type": "official",
+        "url": "https://www.cityu.edu.hk/calendar/academic/2025-2026",
+        "field": "term_dates",
+        "fetched_at": "2026-05-05"
+      }
+    ],
+    "notes": "Sem A: 9/1-11/29/2025；Sem B: 1/12-4/18/2026 教学，exam 4/27-5/11。多数 Master 为 2 年制。",
+    "last_verified": "2026-05-05"
+  },
+  {
+    "id": "tcd",
+    "name_en": "Trinity College Dublin, The University of Dublin",
+    "name_zh": "都柏林圣三一学院",
+    "aliases": [
+      "TCD",
+      "Trinity Dublin",
+      "圣三一"
+    ],
+    "country": "IE",
+    "qs_rank_2026": 75,
+    "program_length_months": 24,
+    "term_system": "semester",
+    "academic_year_start": "2025-09-15",
+    "coursework_end_avg": "2026-04-19",
+    "acc_weeks": 30,
+    "tier": "T1",
+    "tier_label": "顶级",
+    "confidence": "medium",
+    "data_sources": [
+      {
+        "type": "official",
+        "url": "https://www.tcd.ie/calendar/academic-year-structure/",
+        "field": "term_dates",
+        "fetched_at": "2026-05-05"
+      },
+      {
+        "type": "official",
+        "url": "https://www.tcd.ie/academic-services/central-timetabling-unit/assets/pdf/2025-26-Teaching-and-Learning-Weeks.pdf",
+        "field": "term_dates",
+        "fetched_at": "2026-05-05"
+      }
+    ],
+    "notes": "三学期制（Michaelmas/Hilary/Trinity）但近似 2 学期教学：Michaelmas 9/15-12 月初；Hilary 1/19-4/19/2026 教学，assessment 4/21-5/1；Trinity 主为研究/复活节后周。",
+    "last_verified": "2026-05-05"
+  }
+]
