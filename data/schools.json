@@ -2360,6 +2360,40 @@
       "last_verified": "2026-05-05"
     },
     {
+      "id": "durham",
+      "name_en": "Durham University",
+      "name_zh": "杜伦大学",
+      "aliases": [
+        "Durham"
+      ],
+      "country": "GB",
+      "qs_rank_2026": 94,
+      "program_length_months": 12,
+      "term_system": "3-term",
+      "academic_year_start": "2025-10-06",
+      "coursework_end_avg": "2026-03-20",
+      "acc_weeks": 23,
+      "tier": "T1",
+      "tier_label": "顶级",
+      "confidence": "medium",
+      "data_sources": [
+        {
+          "type": "official",
+          "url": "https://www.durham.ac.uk/academic-dates/",
+          "field": "term_dates",
+          "fetched_at": "2026-05-06"
+        },
+        {
+          "type": "official",
+          "url": "https://www.durham.ac.uk/business/programmes/masters/masters-hub/programme-information-/masters-key-dates-/",
+          "field": "term_dates",
+          "fetched_at": "2026-05-06"
+        }
+      ],
+      "notes": "三学期制(类 Oxbridge):Michaelmas 6/10-12/12/2025、Epiphany 12/1-20/3/2026、Easter 27/4-26/6/2026。Master 主体课程在 Michaelmas + Epiphany,Easter Term 多用于 summative assessments + dissertation/project。结课日按 Epiphany teaching 末计,与 Oxford/LSE 同口径。2025-26 具体日期基于 2024-25 实际日期(7/10-19/12,6/1-7/3,7/4-13/6)及 Durham「terms start on Monday」规律推算。",
+      "last_verified": "2026-05-06"
+    },
+    {
       "id": "ualberta",
       "name_en": "University of Alberta",
       "name_zh": "阿尔伯塔大学",
